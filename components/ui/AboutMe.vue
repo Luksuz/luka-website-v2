@@ -8,7 +8,7 @@
           <div class="p-4 grid md:gap-5 grid-cols-1 md:grid-cols-2">
             <img
               class="w-128 rounded-lg"
-              src="../../assets/images/ai-stories.webp"
+              src="../../assets/images/luka.jpeg"
             />
             <div class="pt-10">
               <div>

@@ -16,12 +16,12 @@ export default {
    ** See https://nuxtjs.org/api/configuration-head
    */
   head: {
-    title: 'Kenneth Jimmy. Full-stack developer',
+    title: 'Luka Minđek. Full-stack developer',
     meta: [
       ...createSEOMeta({
-        title: 'Kenneth Jimmy. Full-stack developer',
+        title: 'Luka Minđek. Full-stack developer',
         intro:
-          'I am a software developer in Lagos Nigeria. I build anything with javascript. Feel free to say hi.',
+          'I am a software developer from Varaždin, Croatia. I build anything with javascript, python and rust. Feel free to say hi.',
         image: '~/assets/images/favicon.png',
         url: process.env.HOST_NAME
       }),

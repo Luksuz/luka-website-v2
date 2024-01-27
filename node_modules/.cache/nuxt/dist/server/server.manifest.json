@@ -1,0 +1,21 @@
+{
+  "entry": "server.js",
+  "files": {
+    "pages/index.js": "pages/index.js",
+    "pages/portfolio/index.js": "pages/portfolio/index.js",
+    "pages/resume/index.js": "pages/resume/index.js",
+    "pages/shelf/_slug.js": "pages/shelf/_slug.js",
+    "pages/shelf/index.js": "pages/shelf/index.js",
+    "pages/shelf/topics/_slug.js": "pages/shelf/topics/_slug.js",
+    "server.js": "server.js"
+  },
+  "maps": {
+    "pages/index.js": "pages/index.js.map",
+    "pages/portfolio/index.js": "pages/portfolio/index.js.map",
+    "pages/resume/index.js": "pages/resume/index.js.map",
+    "pages/shelf/_slug.js": "pages/shelf/_slug.js.map",
+    "pages/shelf/index.js": "pages/shelf/index.js.map",
+    "pages/shelf/topics/_slug.js": "pages/shelf/topics/_slug.js.map",
+    "server.js": "server.js.map"
+  }
+}

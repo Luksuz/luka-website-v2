@@ -12,7 +12,6 @@
           <span class="letter">u</span>
           <span class="letter">k</span>
           <span class="letter">a</span>
-          <span class="letter">.</span>
           <span class="letter">&nbsp;</span>
           <span class="letter">M</span>
           <span class="letter">i</span>

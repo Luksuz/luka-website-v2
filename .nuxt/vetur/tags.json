@@ -1,16 +1,4 @@
 {
-  "Button": {
-    "description": "Auto imported from components/utility/Button.vue"
-  },
-  "LazyButton": {
-    "description": "Auto imported from components/utility/Button.vue"
-  },
-  "CustomBorder": {
-    "description": "Auto imported from components/utility/CustomBorder.vue"
-  },
-  "LazyCustomBorder": {
-    "description": "Auto imported from components/utility/CustomBorder.vue"
-  },
   "Burger": {
     "description": "Auto imported from components/layout/Burger.vue"
   },
@@ -124,5 +112,17 @@
   },
   "LazyToggleDarkLightMode": {
     "description": "Auto imported from components/ui/ToggleDarkLightMode.vue"
+  },
+  "Button": {
+    "description": "Auto imported from components/utility/Button.vue"
+  },
+  "LazyButton": {
+    "description": "Auto imported from components/utility/Button.vue"
+  },
+  "CustomBorder": {
+    "description": "Auto imported from components/utility/CustomBorder.vue"
+  },
+  "LazyCustomBorder": {
+    "description": "Auto imported from components/utility/CustomBorder.vue"
   }
 }

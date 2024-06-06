@@ -1,5 +1,3 @@
-export { default as Button } from '../../components/utility/Button.vue'
-export { default as CustomBorder } from '../../components/utility/CustomBorder.vue'
 export { default as Burger } from '../../components/layout/Burger.vue'
 export { default as Hero } from '../../components/layout/Hero.vue'
 export { default as Sidebar } from '../../components/layout/Sidebar.vue'
@@ -19,9 +17,9 @@ export { default as Services } from '../../components/ui/Services.vue'
 export { default as StayConnected } from '../../components/ui/StayConnected.vue'
 export { default as TechIUse } from '../../components/ui/TechIUse.vue'
 export { default as ToggleDarkLightMode } from '../../components/ui/ToggleDarkLightMode.vue'
+export { default as Button } from '../../components/utility/Button.vue'
+export { default as CustomBorder } from '../../components/utility/CustomBorder.vue'
 
-export const LazyButton = import('../../components/utility/Button.vue' /* webpackChunkName: "components/utility/Button" */).then(c => c.default || c)
-export const LazyCustomBorder = import('../../components/utility/CustomBorder.vue' /* webpackChunkName: "components/utility/CustomBorder" */).then(c => c.default || c)
 export const LazyBurger = import('../../components/layout/Burger.vue' /* webpackChunkName: "components/layout/Burger" */).then(c => c.default || c)
 export const LazyHero = import('../../components/layout/Hero.vue' /* webpackChunkName: "components/layout/Hero" */).then(c => c.default || c)
 export const LazySidebar = import('../../components/layout/Sidebar.vue' /* webpackChunkName: "components/layout/Sidebar" */).then(c => c.default || c)
@@ -41,3 +39,5 @@ export const LazyServices = import('../../components/ui/Services.vue' /* webpack
 export const LazyStayConnected = import('../../components/ui/StayConnected.vue' /* webpackChunkName: "components/ui/StayConnected" */).then(c => c.default || c)
 export const LazyTechIUse = import('../../components/ui/TechIUse.vue' /* webpackChunkName: "components/ui/TechIUse" */).then(c => c.default || c)
 export const LazyToggleDarkLightMode = import('../../components/ui/ToggleDarkLightMode.vue' /* webpackChunkName: "components/ui/ToggleDarkLightMode" */).then(c => c.default || c)
+export const LazyButton = import('../../components/utility/Button.vue' /* webpackChunkName: "components/utility/Button" */).then(c => c.default || c)
+export const LazyCustomBorder = import('../../components/utility/CustomBorder.vue' /* webpackChunkName: "components/utility/CustomBorder" */).then(c => c.default || c)

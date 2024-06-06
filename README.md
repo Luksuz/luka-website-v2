@@ -1,4 +1,4 @@
-# 👨‍💻Kenneth Jimmy
+# 👨‍💻Luka Minđek
 
 > 👨‍💻 This is my personal site. My passion for software development is reflected on this [website](https://www.kenjimmy.me).
 

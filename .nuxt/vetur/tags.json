@@ -1,0 +1,128 @@
+{
+  "Button": {
+    "description": "Auto imported from components/utility/Button.vue"
+  },
+  "LazyButton": {
+    "description": "Auto imported from components/utility/Button.vue"
+  },
+  "CustomBorder": {
+    "description": "Auto imported from components/utility/CustomBorder.vue"
+  },
+  "LazyCustomBorder": {
+    "description": "Auto imported from components/utility/CustomBorder.vue"
+  },
+  "Burger": {
+    "description": "Auto imported from components/layout/Burger.vue"
+  },
+  "LazyBurger": {
+    "description": "Auto imported from components/layout/Burger.vue"
+  },
+  "Hero": {
+    "description": "Auto imported from components/layout/Hero.vue"
+  },
+  "LazyHero": {
+    "description": "Auto imported from components/layout/Hero.vue"
+  },
+  "Sidebar": {
+    "description": "Auto imported from components/layout/Sidebar.vue"
+  },
+  "LazySidebar": {
+    "description": "Auto imported from components/layout/Sidebar.vue"
+  },
+  "TheFooter": {
+    "description": "Auto imported from components/layout/TheFooter.vue"
+  },
+  "LazyTheFooter": {
+    "description": "Auto imported from components/layout/TheFooter.vue"
+  },
+  "TheNavBar": {
+    "description": "Auto imported from components/layout/TheNavBar.vue"
+  },
+  "LazyTheNavBar": {
+    "description": "Auto imported from components/layout/TheNavBar.vue"
+  },
+  "TheSideBar": {
+    "description": "Auto imported from components/layout/TheSideBar.vue"
+  },
+  "LazyTheSideBar": {
+    "description": "Auto imported from components/layout/TheSideBar.vue"
+  },
+  "AboutMe": {
+    "description": "Auto imported from components/ui/AboutMe.vue"
+  },
+  "LazyAboutMe": {
+    "description": "Auto imported from components/ui/AboutMe.vue"
+  },
+  "AlertMessage": {
+    "description": "Auto imported from components/ui/AlertMessage.vue"
+  },
+  "LazyAlertMessage": {
+    "description": "Auto imported from components/ui/AlertMessage.vue"
+  },
+  "ArticleCard": {
+    "description": "Auto imported from components/ui/ArticleCard.vue"
+  },
+  "LazyArticleCard": {
+    "description": "Auto imported from components/ui/ArticleCard.vue"
+  },
+  "CustomCursor": {
+    "description": "Auto imported from components/ui/CustomCursor.vue"
+  },
+  "LazyCustomCursor": {
+    "description": "Auto imported from components/ui/CustomCursor.vue"
+  },
+  "MyWorks": {
+    "description": "Auto imported from components/ui/MyWorks.vue"
+  },
+  "LazyMyWorks": {
+    "description": "Auto imported from components/ui/MyWorks.vue"
+  },
+  "PortfolioGraphic": {
+    "description": "Auto imported from components/ui/PortfolioGraphic.vue"
+  },
+  "LazyPortfolioGraphic": {
+    "description": "Auto imported from components/ui/PortfolioGraphic.vue"
+  },
+  "PortfolioNativeApps": {
+    "description": "Auto imported from components/ui/PortfolioNativeApps.vue"
+  },
+  "LazyPortfolioNativeApps": {
+    "description": "Auto imported from components/ui/PortfolioNativeApps.vue"
+  },
+  "PortfolioWebApps": {
+    "description": "Auto imported from components/ui/PortfolioWebApps.vue"
+  },
+  "LazyPortfolioWebApps": {
+    "description": "Auto imported from components/ui/PortfolioWebApps.vue"
+  },
+  "PreLoader": {
+    "description": "Auto imported from components/ui/PreLoader.vue"
+  },
+  "LazyPreLoader": {
+    "description": "Auto imported from components/ui/PreLoader.vue"
+  },
+  "Services": {
+    "description": "Auto imported from components/ui/Services.vue"
+  },
+  "LazyServices": {
+    "description": "Auto imported from components/ui/Services.vue"
+  },
+  "StayConnected": {
+    "description": "Auto imported from components/ui/StayConnected.vue"
+  },
+  "LazyStayConnected": {
+    "description": "Auto imported from components/ui/StayConnected.vue"
+  },
+  "TechIUse": {
+    "description": "Auto imported from components/ui/TechIUse.vue"
+  },
+  "LazyTechIUse": {
+    "description": "Auto imported from components/ui/TechIUse.vue"
+  },
+  "ToggleDarkLightMode": {
+    "description": "Auto imported from components/ui/ToggleDarkLightMode.vue"
+  },
+  "LazyToggleDarkLightMode": {
+    "description": "Auto imported from components/ui/ToggleDarkLightMode.vue"
+  }
+}

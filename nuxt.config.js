@@ -63,6 +63,10 @@ export default {
     {
       src: '~plugins/vue-scrollmagic.js',
       ssr: false
+    },
+    { 
+      src: '~/plugins/chatbot.js', 
+      ssr: false 
     }
   ],
   /*

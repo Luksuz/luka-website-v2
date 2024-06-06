@@ -29,22 +29,107 @@
         </div>
       </div>
     </div>
+    
+    <VueBotUI :messages="messages" :options="botOptions" @msg-send="messageSendHandler" :botTyping="botTyping" :input-disable="inputDisable" />
   </div>
 </template>
 
 <script>
+import axios from 'axios';
 export default {
   beforeCreate() {
     this.showHideSpinner = true;
   },
   mounted() {
     this.showHideSpinner = false;
+    this.initSession();
   },
   data() {
     return {
-      showHideSpinner: true
+      showHideSpinner: true,
+      sessionId: null, // Store session ID
+      messages: [], // Your chatbot messages data
+      botTyping: false,
+      inputDisable: false,
+      botOptions: {
+        boardContentBg: '#f4f4f4',
+        msgBubbleBgBot: '#fff',
+        inputPlaceholder: 'Type here...',
+        inputDisableBg: '#fff',
+        inputDisablePlaceholder: 'Luka is typing...',
+        colorScheme: '#e45447',
+        msgBubbleBgUser: '#e45447',
+      }, // Your chatbot options
     };
-  }
+  },
+  methods: {
+    async messageSendHandler(value) {
+      this.messages.push({
+        agent: 'user',
+        type: 'text',
+        text: value.text,
+      })
+
+      this.botTyping = true;
+      this.inputDisable = true;
+      
+      // API request to send message and receive response.
+      try {
+        const response = await axios.post(
+          'https://langchain.azure-api.net/message/',
+          {
+            message: value.text,
+            'content-type': 'application/json',
+            session_id: this.sessionId,
+          },
+          {
+            headers: {
+              'Ocp-Apim-Subscription-Key': '4cd5bb2841894636a3ee0b6d9760dc97',
+            },
+          }
+        );
+
+        if (response.data) {
+          this.messages.push({
+            agent: 'bot',
+            type: 'text',
+            text: response.data.response,
+          });
+        }
+      } catch (error) {
+        console.error('Error sending message:', error);
+        this.messages.push({
+          agent: 'bot',
+          type: 'text',
+          text: 'An error has occurred. Please try again.',
+        });
+      } finally {
+        this.botTyping = false;
+        this.inputDisable = false;
+      }
+    },
+    generateRandomID(length) {
+      const characters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789';
+      let result = '';
+      const charactersLength = characters.length;
+      for (let i = 0; i < length; i++) {
+        result += characters.charAt(Math.floor(Math.random() * charactersLength));
+      }
+      return result;
+    },
+    initSession() {
+      // Get stored ID or generate a random session ID
+      this.sessionId = this.getSessionID();
+    },
+    getSessionID() {
+      let sessionId = sessionStorage.getItem('session_id');
+      if (!sessionId) {
+        sessionId = this.generateRandomID(8); // Generate a new session ID
+        sessionStorage.setItem('session_id', sessionId);
+      }
+      return sessionId;
+    },
+  },
 };
 </script>
 

@@ -22,3 +22,6 @@
 - Resume
 - Portfolio
 - Carousel
+
+## Preview it here
+www.lukamindek.com

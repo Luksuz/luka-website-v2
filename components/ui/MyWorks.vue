@@ -1,7 +1,7 @@
 <template>
   <section class="mt-12 md:mt-32 services">
     <h1 class="capitalize text-3xl md:text-4xl font-bold leading-none">
-      My Works
+      My Portfolio
     </h1>
     <p class="capitalize mt-2 text-lg">few of my past and present projects</p>
     <CustomBorder />

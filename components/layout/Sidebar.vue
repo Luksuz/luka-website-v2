@@ -43,7 +43,7 @@
             <nuxt-link to="/portfolio">
               <div class="mt-3">
                 <font-awesome-icon :icon="['fas', 'file']" class="text-lg" />
-                <span class="ml-4 capitalize">works</span>
+                <span class="ml-4 capitalize">portfolio</span>
               </div>
             </nuxt-link>
             <nuxt-link to="/shelf">

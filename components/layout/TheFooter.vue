@@ -15,7 +15,7 @@
       <ul>
         <nuxt-link to="/portfolio">
           <li class="uppercase inline-block text-xs md:mr-6 py-1 px-2 f-link">
-            works
+            portfolio
           </li>
         </nuxt-link>
         <nuxt-link to="/resume">

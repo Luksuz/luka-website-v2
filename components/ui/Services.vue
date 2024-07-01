@@ -36,7 +36,7 @@
           modern, fast, cross-platform, and popular.
         </p> -->
         <div class="mt-8 see-project-btn">
-          <Button displayTitle="SEE MY WORKS" linkTo="/portfolio" />
+          <Button displayTitle="SEE MY PORTFOLIO" linkTo="/portfolio" />
         </div>
       </div>
       <div class="hidden lg:block illustration">

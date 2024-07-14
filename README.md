@@ -1,6 +1,6 @@
 # 👨‍💻Luka Minđek
 
-> 👨‍💻 This is my personal site. My passion for software development is reflected on this [website](https://www.kenjimmy.me).
+> 👨‍💻 This is my personal site. My passion for software development is reflected on this [website](https://www.lukamindek.com).
 
 ## 🏗 Building Materials
 

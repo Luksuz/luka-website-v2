@@ -1,9 +1,9 @@
 <template>
   <section class="mt-12 md:mt-32 services">
     <h1 class="capitalize text-3xl md:text-4xl font-bold leading-none">
-      My Portfolio
+      A small part of my Portfolio
     </h1>
-    <p class="capitalize mt-2 text-lg">few of my past and present projects</p>
+    <p class="capitalize mt-2 text-lg">Here i displayed a small part of my notable work</p>
     <CustomBorder />
 
     <div>

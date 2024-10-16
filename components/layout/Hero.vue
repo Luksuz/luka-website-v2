@@ -27,14 +27,15 @@
         <a href="https://www.joinveet.com/" target="_blank"><u>Veet</u></a>
       </p> -->
       <p class="uppercase font-bold des text-center md:text-left px-5 md:px-0">
-        SOFTWARE DEVELOPER
+        AI SOFTWARE ENGINEER
       </p>
       <p
         class="text-kjColorGray dark:text-kjColorLight text-sm mt-10 text-center md:text-left px-5 md:px-0 md:w-64 message"
       >
-        Software Developer from Varaždin, Croatia with rock-solid
-        experience in building complex applications with cutting-edge
-        technologies.
+      AI Software Engineer from Varaždin, Croatia, passionate about creating smart, scalable solutions.
+      I specialize in integrating AI into modern applications and love solving complex problems with innovative tech.
+      My work spans full-stack development, backend architecture,
+      and AI-driven features. Say hi!
       </p>
 
       <div class="mt-10 talk-wrapper">
@@ -53,7 +54,7 @@
     <div class="mt-10 md:flex-1">
       <img
         class="ml-auto mr-auto md:ml-0 md:mr-0"
-        src="../../assets/images/luka-web.png"
+        src="../../assets/images/luka-circle-no-bg.png"
         alt="luka photo"
       />
     </div>

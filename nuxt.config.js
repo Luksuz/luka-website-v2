@@ -21,7 +21,7 @@ export default {
       ...createSEOMeta({
         title: 'Luka Minđek. Full-stack developer',
         intro:
-          'I am a software developer from Varaždin, Croatia. I build anything with javascript, python and rust. Feel free to say hi.',
+          "I am an AI software engineer from Varaždin, Croatia. I build anything, from end-to-end applications to harnessing the power of AI, Feel free to say hi.",
         image: '~/assets/images/favicon.png',
         url: process.env.HOST_NAME
       }),

@@ -1,55 +1,25 @@
 // WEB APPS
-export const book_reviews = {
-  name: 'Book reviews',
-  link: 'http://book-reviews.s3-website-us-east-1.amazonaws.com/',
-  techUsed: 'Django MySql Bootstrap AWS',
+export const containers = {
+  name: 'Serial number detection on shipping containers',
+  link: 'https://serialnum-containers.netlify.app/',
+  techUsed: 'cv2, YOLO detection models, React, Flask',
   imgUrl:
-    '@/assets/images/book-reviews.png'
+    '@/assets/images/containers.png'
 };
 
-export const get_active = {
-  name: "Get-active",
+export const intelliquery = {
+  name: "Intelliquery",
   link:
-    'http://get-active-frontend.s3-website-us-east-1.amazonaws.com',
-  techUsed: "Flask MongoDB Bootstrap AWS",
+    'https://intelliquery.netlify.app/',
+  techUsed: "Django, Flask, Netlify CLI, Langchain",
   imgUrl:
-    '@/assets/images/getactive-ai.webp'
+    '@/assets/images/intelliquery.png'
 };
 
 export const ai_stories = {
   name: 'AI stories',
-  link: 'http://ai-stories-frontend.s3-website-us-east-1.amazonaws.com/',
+  link: 'https://aistories.netlify.app/',
   techUsed: 'Node.js Express Bootstrap AWS',
   imgUrl:
     '@/assets/images/ai-stories.webp'
-};
-
-export const hairdresser_pozgaj = {
-  name: 'Hairdressing saloon Požgaj',
-  link: 'https://prismatic-treacle-631255.netlify.app/',
-  techUsed: 'Javascript Tailwind',
-  imgUrl:
-    '@/assets/images/salon-požgaj.webp'
-};
-
-export const blog = {
-  name: 'Personal blog',
-  link: 'https://luka-blog.netlify.app/',
-  techUsed: 'Javascript Tailwind',
-  imgUrl:
-    '@/assets/images/luka-blog.webp'
-};
-
-
-
-
-
-
-// NATIVE APPS
-export const ipaMastery = {
-  name: 'IPA Mastery',
-  bgImage: require('~/assets/images/My-works/ipa-mastery.jpg'),
-  link:
-  '@/assets/images/book-reviews.png',
-  techUsed: 'Flutter'
 };

@@ -63,8 +63,7 @@
 
               <div class="mt-2">
                 <p class="inline-block ml-1">
-                  <span class="font-bold">Fun Fact:</span> I am a pretty good
-                  dancer 😁
+                  <span class="font-bold">Fun Fact:</span> This photo is AI generated
                 </p>
               </div>
             </div>
@@ -78,25 +77,18 @@
               </div>
 
               <p>
-                I am an exceptional software engineer with solid knowledge and
-                experience in the ever-evolving realm of technology and as a
-                person, I have a strong discipline to learn, improve, and
-                evolve.
+                I am a skilled AI software engineer with extensive 
+                experience in designing and building comprehensive AI-powered applications.
               </p>
 
               <p class="mt-2">
-                My career has been marked by a dedication to technical
-                excellence and my expertise lies within the JavaScript and Python
-                ecosystem, where I've honed my skills to deliver efficient and
-                user-centric software solutions. With a passion for solving
-                complex problems, I am committed to pushing the boundaries of
-                what's possible in software development.
+                Throughout my career, I have focused on technical excellence, 
+                particularly in the NLP ecosystem where I’ve developed a niche. While image processing remains my primary interest, 
+                I’ve also specialized in NLP and agentic system development due to evolving circumstances.
               </p>
 
               <p class="mt-2">
-                When I am not coding, I am either playing chess, video
-                games, reading books or watching movies. Other times I am reading newsletters
-                or upskilling.
+                Outside of coding, I enjoy working out, hiking, playing chess, and continuously finding ways to improve myself.
               </p>
             </div>
           </div>

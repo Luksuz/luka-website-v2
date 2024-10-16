@@ -108,20 +108,20 @@ export default {
   },
   methods: {
     animateServices() {
-      const { services } = this.$refs;
-      let tl = new TimelineMax({ onUpdate: updatePercentage });
+  const { services } = this.$refs;
+  let tl = new TimelineMax({ onUpdate: updatePercentage });
 
-      tl.from('.illustration__img--1', 0.5, { scale: 0.5 }, 0)
-        .from('.illustration__img--2', 0.5, { opacity: 0, y: -50 }, 0.2)
-        .from('.illustration__img--3', 0.5, { opacity: 0, y: -50 }, 0.5)
-        .from('.data-1', 1, { opacity: 0, stagger: 1 }, 0.7)
-        .from('.illustration__img--5', 0.5, { opacity: 0, x: 100 }, 1.4)
-        .from('.illustration__img--6', 0.5, { opacity: 0, x: -100 }, 1.7)
-        .from('.data-2', 1, { opacity: 0, stagger: 1 }, 1.9)
-        .from('.illustration__img--4', 0.5, { opacity: 0, x: -100 }, 2.6)
-        .from('.illustration__img--7', 0.5, { opacity: 0, x: 100 }, 2.9)
-        .from('.data-3', 1, { opacity: 0, stagger: 1 }, 3.1)
-        .to('.see-project-btn', 1, { opacity: 1 }, 3.5);
+  tl.from('.illustration__img--1', 0.1, { scale: 0.5 }, 0)
+    .from('.illustration__img--2', 0.1, { opacity: 0, y: -50 }, 0.1)
+    .from('.illustration__img--3', 0.1, { opacity: 0, y: -50 }, 0.2)
+    .from('.data-1', 0.2, { opacity: 0, stagger: 0.6 }, 0.3)
+    .from('.illustration__img--5', 0.1, { opacity: 0, x: 100 }, 0.5)
+    .from('.illustration__img--6', 0.1, { opacity: 0, x: -100 }, 0.7)
+    .from('.data-2', 0.2, { opacity: 0, stagger: 0.6 }, 0.8)
+    .from('.illustration__img--4', 0.1, { opacity: 0, x: -100 }, 1)
+    .from('.illustration__img--7', 0.1, { opacity: 0, x: 100 }, 1.2)
+    .from('.data-3', 0.2, { opacity: 0, stagger: 0.6 }, 1.4)
+    .to('.see-project-btn', 0.2, { opacity: 1 }, 1.5);
 
       const scene = this.$scrollmagic
         .scene({

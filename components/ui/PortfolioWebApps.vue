@@ -6,7 +6,7 @@
       :message="message"
     />
     <div class="grid grid-cols-1 md:grid-cols-2 gap-8 dark:text-kjColorLight">
-      <a :href="book_reviews.link" target="_blank">
+      <a :href="containers.link" target="_blank">
         <div
           class="relative pf-card rounded-lg"
           @mouseenter="showDetails(1)"
@@ -18,15 +18,15 @@
               class="py-4 px-8 w-full bg-kjColorSecondary bg-opacity-75 absolute bottom-0 z-50 rounded-br-lg rounded-bl-lg"
             >
               <h2 class="font-bold text-lg text-kjColorLight capitalize">
-                {{ book_reviews.name }}
+                {{ containers.name }}
               </h2>
               <p class="text w-2/3 text-kjColorLight mt-2">
-                {{ book_reviews.techUsed }}
+                {{ containers.techUsed }}
               </p>
             </div>
           </transition>
 
-          <img src="../../assets/images/book-reviews.webp" alt="book_reviews" class="rounded-lg" />
+          <img src="../../assets/images/containers.png" alt="containers app" class="rounded-lg" />
         </div>
       </a>
 
@@ -61,7 +61,7 @@
 <!--@click="showHideAlert" for alert-->
 
 
-      <a :href="hairdresser_pozgaj.link" target="_blank">
+      <a :href="intelliquery.link" target="_blank">
         <div
           class="relative pf-card rounded-lg"
           @mouseenter="showDetails(3)"
@@ -73,10 +73,10 @@
               class="py-4 px-8 w-full bg-kjColorSecondary bg-opacity-75 absolute bottom-0 z-50 rounded-br-lg rounded-bl-lg"
             >
               <h2 class="font-bold text-lg text-kjColorLight capitalize">
-                {{ hairdresser_pozgaj.name }}
+                {{ intelliquery.name }}
               </h2>
               <p class="text w-2/3 text-kjColorLight mt-2">
-                {{ hairdresser_pozgaj.techUsed }}
+                {{ intelliquery.techUsed }}
               </p>
             </div>
           </transition>
@@ -85,73 +85,15 @@
             <source :src="hairdresser_pozgaj.videoLink" type="video/mp4" />
             Your browser is not supported!
           </video> -->
-          <img src="../../assets/images/getactive-ai.webp" alt="hairdresser_pozgaj" class="rounded-lg" />
+          <img src="../../assets/images/intelliquery.png" alt="intelliquery" class="rounded-lg" />
         </div>
       </a>
-
-      <a :href="blog.link" target="_blank">
-        <div
-          class="relative pf-card rounded-lg"
-          @mouseenter="showDetails(4)"
-          @mouseleave="hideDetails"
-        >
-          <transition name="slide">
-            <div
-              v-if="showDetials4"
-              class="py-4 px-8 w-full bg-kjColorSecondary bg-opacity-75 absolute bottom-0 z-50 rounded-br-lg rounded-bl-lg"
-            >
-              <h2 class="font-bold text-lg text-kjColorLight capitalize">
-                {{ blog.name }}
-              </h2>
-              <p class="text w-2/3 text-kjColorLight mt-2">
-                {{ blog.techUsed }}
-              </p>
-            </div>
-          </transition>
-
-          <!-- <video class="rounded-lg" autoplay muted loop>
-            <source :src="blog.videoLink" type="video/mp4" />
-            Your browser is not supported!
-          </video> -->
-          <img src="../../assets/images/luka-blog.webp" alt="blog" class="rounded-lg" />
-        </div>
-      </a>
-
-      <a :href="hairdresser_pozgaj.link" target="_blank">
-        <div
-          class="relative pf-card rounded-lg"
-          @mouseenter="showDetails(5)"
-          @mouseleave="hideDetails"
-        >
-          <transition name="slide">
-            <div
-              v-if="showDetials5"
-              class="py-4 px-8 w-full bg-kjColorSecondary bg-opacity-75 absolute bottom-0 z-50 rounded-br-lg rounded-bl-lg"
-            >
-              <h2 class="font-bold text-lg text-kjColorLight capitalize">
-                {{ hairdresser_pozgaj.name }}
-              </h2>
-              <p class="text w-2/3 text-kjColorLight mt-2">
-                {{ hairdresser_pozgaj.techUsed }}
-              </p>
-            </div>
-          </transition>
-
-          <!-- <video class="rounded-lg" autoplay muted loop>
-            <source :src="hairdresser_pozgaj.videoLink" type="video/mp4" />
-            Your browser is not supported!
-          </video> -->
-          <img src="../../assets/images/salon-pozgaj.webp" alt="hairdresser_pozgaj" class="rounded-lg" />
-        </div>
-      </a>
-
-
     </div>
   </div>
 </template>
 
 <script>
-import { hairdresser_pozgaj, get_active, ai_stories, book_reviews, blog } from '~/docs/portfolios.js';
+import { intelliquery, containers, ai_stories } from '~/docs/portfolios.js';
 
 export default {
   data() {
@@ -162,11 +104,9 @@ export default {
       showDetials4: false,
       showDetials5: false,
       showDetials6: false,
-      hairdresser_pozgaj,
-      get_active,
       ai_stories,
-      book_reviews,
-      blog,
+      containers,
+      intelliquery,
       message: 'Luka appreciates you 😎. Thanks for visiting! :)',
       showAlert: false
     };

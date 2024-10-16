@@ -10,22 +10,17 @@
     >
       <div class="p-5 md:mx-8 services__data">
         <h2 class="text-lg font-black uppercase mb-3 data-2">
-          backend
+          End-to-End Applications
         </h2>
         <p class="mb-5 data-2">
-          I build scalable and maintainable backend applications using
-          cutting-edge technologies like Django, Node.js, Docker, MySql, MongoDB, and cloud technologies in AWS and GCP
-          
+          I specialize in designing and building complete end-to-end solutions. From front-end development using frameworks like React and Next.js to back-end services with Node.js or Django, I ensure the entire architecture is robust, scalable, and maintainable. By leveraging cloud platforms like AWS and GCP, I deliver secure, efficient applications with seamless integrations, responsive UIs, and optimized performance.
         </p>
 
         <h2 class="text-lg font-black uppercase mb-3 data-1">
-          frontend
+          AI Development
         </h2>
         <p class="mb-5 data-1">
-          I build client-side applications with modern features like SPA and
-          maintain semantic coding style among other best practices for SEO
-          optimisation, using modern tech like Next.js (React), Bootstrap,
-          tailwind and farmerMotion.
+          I have deep expertise in AI, particularly in NLP and machine learning. I develop custom AI models for tasks like text analysis, chatbot systems, and intelligent agents. Using frameworks such as TensorFlow, PyTorch, and Hugging Face, I create solutions that enable predictive analytics, automation, and complex decision-making processes, always aiming for high accuracy and real-world applicability.
         </p>
 
         <!-- <h2 class="text-lg font-black uppercase mb-3 data-3">
@@ -93,12 +88,12 @@ export default {
           des: 'I build websites and web applications.'
         },
         {
-          title: 'Ux/ui design',
-          des: 'I design application user interface.'
+          title: 'API development',
+          des: "I build scalable server side API's"
         },
         {
-          title: 'Graphic design',
-          des: 'I design logos, flyers, cards, etc.'
+          title: 'Artificial Inteligence',
+          des: 'From Natural Language Processing to Computer Vision, i got you covered.'
         }
       ]
     };

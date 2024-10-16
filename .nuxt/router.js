@@ -3,12 +3,12 @@ import Router from 'vue-router'
 import { interopDefault } from './utils'
 import scrollBehavior from './router.scrollBehavior.js'
 
-const _50c72768 = () => interopDefault(import('../pages/portfolio/index.vue' /* webpackChunkName: "pages/portfolio/index" */))
-const _517111bf = () => interopDefault(import('../pages/resume/index.vue' /* webpackChunkName: "pages/resume/index" */))
-const _e0a021a4 = () => interopDefault(import('../pages/shelf/index.vue' /* webpackChunkName: "pages/shelf/index" */))
-const _4b0910b3 = () => interopDefault(import('../pages/shelf/topics/_slug.vue' /* webpackChunkName: "pages/shelf/topics/_slug" */))
-const _e40d6434 = () => interopDefault(import('../pages/shelf/_slug.vue' /* webpackChunkName: "pages/shelf/_slug" */))
-const _46de3b93 = () => interopDefault(import('../pages/index.vue' /* webpackChunkName: "pages/index" */))
+const _517b78b4 = () => interopDefault(import('../pages/portfolio/index.vue' /* webpackChunkName: "pages/portfolio/index" */))
+const _0a4808a5 = () => interopDefault(import('../pages/resume/index.vue' /* webpackChunkName: "pages/resume/index" */))
+const _2a4b8388 = () => interopDefault(import('../pages/shelf/index.vue' /* webpackChunkName: "pages/shelf/index" */))
+const _4f28c319 = () => interopDefault(import('../pages/shelf/topics/_slug.vue' /* webpackChunkName: "pages/shelf/topics/_slug" */))
+const _2894e240 = () => interopDefault(import('../pages/shelf/_slug.vue' /* webpackChunkName: "pages/shelf/_slug" */))
+const _dd22c926 = () => interopDefault(import('../pages/index.vue' /* webpackChunkName: "pages/index" */))
 
 // TODO: remove in Nuxt 3
 const emptyFn = () => {}
@@ -28,27 +28,27 @@ export const routerOptions = {
 
   routes: [{
     path: "/portfolio",
-    component: _50c72768,
+    component: _517b78b4,
     name: "portfolio"
   }, {
     path: "/resume",
-    component: _517111bf,
+    component: _0a4808a5,
     name: "resume"
   }, {
     path: "/shelf",
-    component: _e0a021a4,
+    component: _2a4b8388,
     name: "shelf"
   }, {
     path: "/shelf/topics/:slug?",
-    component: _4b0910b3,
+    component: _4f28c319,
     name: "shelf-topics-slug"
   }, {
     path: "/shelf/:slug",
-    component: _e40d6434,
+    component: _2894e240,
     name: "shelf-slug"
   }, {
     path: "/",
-    component: _46de3b93,
+    component: _dd22c926,
     name: "index"
   }],
 

@@ -35,6 +35,18 @@
   "LazyTheSideBar": {
     "description": "Auto imported from components/layout/TheSideBar.vue"
   },
+  "Button": {
+    "description": "Auto imported from components/utility/Button.vue"
+  },
+  "LazyButton": {
+    "description": "Auto imported from components/utility/Button.vue"
+  },
+  "CustomBorder": {
+    "description": "Auto imported from components/utility/CustomBorder.vue"
+  },
+  "LazyCustomBorder": {
+    "description": "Auto imported from components/utility/CustomBorder.vue"
+  },
   "AboutMe": {
     "description": "Auto imported from components/ui/AboutMe.vue"
   },
@@ -112,17 +124,5 @@
   },
   "LazyToggleDarkLightMode": {
     "description": "Auto imported from components/ui/ToggleDarkLightMode.vue"
-  },
-  "Button": {
-    "description": "Auto imported from components/utility/Button.vue"
-  },
-  "LazyButton": {
-    "description": "Auto imported from components/utility/Button.vue"
-  },
-  "CustomBorder": {
-    "description": "Auto imported from components/utility/CustomBorder.vue"
-  },
-  "LazyCustomBorder": {
-    "description": "Auto imported from components/utility/CustomBorder.vue"
   }
 }

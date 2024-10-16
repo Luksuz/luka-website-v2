@@ -52,7 +52,7 @@ var component = Object(componentNormalizer["a" /* default */])(
   false,
   injectStyles,
   "24ddb798",
-  "b521afd4"
+  "25710734"
   
 )
 
@@ -229,7 +229,7 @@ if(content.locals) module.exports = content.locals;
 // add CSS to SSR context
 var add = __webpack_require__(3).default
 module.exports.__inject__ = function (context) {
-  add("7c1dab98", content, true, context)
+  add("5785b2d2", content, true, context)
 };
 
 /***/ }),
@@ -529,7 +529,7 @@ var component = Object(componentNormalizer["a" /* default */])(
   false,
   injectStyles,
   "c9203976",
-  "6deeb773"
+  "8adacdba"
   
 )
 
@@ -597,7 +597,7 @@ var component = Object(componentNormalizer["a" /* default */])(
   false,
   injectStyles,
   "72631810",
-  "d439c600"
+  "519b56b0"
   
 )
 
@@ -691,10 +691,10 @@ module.exports = __webpack_require__.p + "img/illustration-07.ecbfddb.png";
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _node_modules_vue_style_loader_index_js_ref_7_oneOf_1_0_node_modules_css_loader_dist_cjs_js_ref_7_oneOf_1_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_7_oneOf_1_2_node_modules_sass_loader_dist_cjs_js_ref_7_oneOf_1_3_node_modules_nuxt_components_dist_loader_js_ref_0_0_node_modules_vue_loader_lib_index_js_vue_loader_options_Services_vue_vue_type_style_index_0_id_ace9118e_lang_scss_scoped_true___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(81);
-/* harmony import */ var _node_modules_vue_style_loader_index_js_ref_7_oneOf_1_0_node_modules_css_loader_dist_cjs_js_ref_7_oneOf_1_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_7_oneOf_1_2_node_modules_sass_loader_dist_cjs_js_ref_7_oneOf_1_3_node_modules_nuxt_components_dist_loader_js_ref_0_0_node_modules_vue_loader_lib_index_js_vue_loader_options_Services_vue_vue_type_style_index_0_id_ace9118e_lang_scss_scoped_true___WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_vue_style_loader_index_js_ref_7_oneOf_1_0_node_modules_css_loader_dist_cjs_js_ref_7_oneOf_1_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_7_oneOf_1_2_node_modules_sass_loader_dist_cjs_js_ref_7_oneOf_1_3_node_modules_nuxt_components_dist_loader_js_ref_0_0_node_modules_vue_loader_lib_index_js_vue_loader_options_Services_vue_vue_type_style_index_0_id_ace9118e_lang_scss_scoped_true___WEBPACK_IMPORTED_MODULE_0__);
-/* harmony reexport (unknown) */ for(var __WEBPACK_IMPORT_KEY__ in _node_modules_vue_style_loader_index_js_ref_7_oneOf_1_0_node_modules_css_loader_dist_cjs_js_ref_7_oneOf_1_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_7_oneOf_1_2_node_modules_sass_loader_dist_cjs_js_ref_7_oneOf_1_3_node_modules_nuxt_components_dist_loader_js_ref_0_0_node_modules_vue_loader_lib_index_js_vue_loader_options_Services_vue_vue_type_style_index_0_id_ace9118e_lang_scss_scoped_true___WEBPACK_IMPORTED_MODULE_0__) if(["default"].indexOf(__WEBPACK_IMPORT_KEY__) < 0) (function(key) { __webpack_require__.d(__webpack_exports__, key, function() { return _node_modules_vue_style_loader_index_js_ref_7_oneOf_1_0_node_modules_css_loader_dist_cjs_js_ref_7_oneOf_1_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_7_oneOf_1_2_node_modules_sass_loader_dist_cjs_js_ref_7_oneOf_1_3_node_modules_nuxt_components_dist_loader_js_ref_0_0_node_modules_vue_loader_lib_index_js_vue_loader_options_Services_vue_vue_type_style_index_0_id_ace9118e_lang_scss_scoped_true___WEBPACK_IMPORTED_MODULE_0__[key]; }) }(__WEBPACK_IMPORT_KEY__));
- /* harmony default export */ __webpack_exports__["default"] = (_node_modules_vue_style_loader_index_js_ref_7_oneOf_1_0_node_modules_css_loader_dist_cjs_js_ref_7_oneOf_1_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_7_oneOf_1_2_node_modules_sass_loader_dist_cjs_js_ref_7_oneOf_1_3_node_modules_nuxt_components_dist_loader_js_ref_0_0_node_modules_vue_loader_lib_index_js_vue_loader_options_Services_vue_vue_type_style_index_0_id_ace9118e_lang_scss_scoped_true___WEBPACK_IMPORTED_MODULE_0___default.a); 
+/* harmony import */ var _node_modules_vue_style_loader_index_js_ref_7_oneOf_1_0_node_modules_css_loader_dist_cjs_js_ref_7_oneOf_1_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_7_oneOf_1_2_node_modules_sass_loader_dist_cjs_js_ref_7_oneOf_1_3_node_modules_nuxt_components_dist_loader_js_ref_0_0_node_modules_vue_loader_lib_index_js_vue_loader_options_Services_vue_vue_type_style_index_0_id_71832802_lang_scss_scoped_true___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(81);
+/* harmony import */ var _node_modules_vue_style_loader_index_js_ref_7_oneOf_1_0_node_modules_css_loader_dist_cjs_js_ref_7_oneOf_1_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_7_oneOf_1_2_node_modules_sass_loader_dist_cjs_js_ref_7_oneOf_1_3_node_modules_nuxt_components_dist_loader_js_ref_0_0_node_modules_vue_loader_lib_index_js_vue_loader_options_Services_vue_vue_type_style_index_0_id_71832802_lang_scss_scoped_true___WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_vue_style_loader_index_js_ref_7_oneOf_1_0_node_modules_css_loader_dist_cjs_js_ref_7_oneOf_1_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_7_oneOf_1_2_node_modules_sass_loader_dist_cjs_js_ref_7_oneOf_1_3_node_modules_nuxt_components_dist_loader_js_ref_0_0_node_modules_vue_loader_lib_index_js_vue_loader_options_Services_vue_vue_type_style_index_0_id_71832802_lang_scss_scoped_true___WEBPACK_IMPORTED_MODULE_0__);
+/* harmony reexport (unknown) */ for(var __WEBPACK_IMPORT_KEY__ in _node_modules_vue_style_loader_index_js_ref_7_oneOf_1_0_node_modules_css_loader_dist_cjs_js_ref_7_oneOf_1_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_7_oneOf_1_2_node_modules_sass_loader_dist_cjs_js_ref_7_oneOf_1_3_node_modules_nuxt_components_dist_loader_js_ref_0_0_node_modules_vue_loader_lib_index_js_vue_loader_options_Services_vue_vue_type_style_index_0_id_71832802_lang_scss_scoped_true___WEBPACK_IMPORTED_MODULE_0__) if(["default"].indexOf(__WEBPACK_IMPORT_KEY__) < 0) (function(key) { __webpack_require__.d(__webpack_exports__, key, function() { return _node_modules_vue_style_loader_index_js_ref_7_oneOf_1_0_node_modules_css_loader_dist_cjs_js_ref_7_oneOf_1_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_7_oneOf_1_2_node_modules_sass_loader_dist_cjs_js_ref_7_oneOf_1_3_node_modules_nuxt_components_dist_loader_js_ref_0_0_node_modules_vue_loader_lib_index_js_vue_loader_options_Services_vue_vue_type_style_index_0_id_71832802_lang_scss_scoped_true___WEBPACK_IMPORTED_MODULE_0__[key]; }) }(__WEBPACK_IMPORT_KEY__));
+ /* harmony default export */ __webpack_exports__["default"] = (_node_modules_vue_style_loader_index_js_ref_7_oneOf_1_0_node_modules_css_loader_dist_cjs_js_ref_7_oneOf_1_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_7_oneOf_1_2_node_modules_sass_loader_dist_cjs_js_ref_7_oneOf_1_3_node_modules_nuxt_components_dist_loader_js_ref_0_0_node_modules_vue_loader_lib_index_js_vue_loader_options_Services_vue_vue_type_style_index_0_id_71832802_lang_scss_scoped_true___WEBPACK_IMPORTED_MODULE_0___default.a); 
 
 /***/ }),
 /* 101 */
@@ -704,7 +704,7 @@ __webpack_require__.r(__webpack_exports__);
 var ___CSS_LOADER_API_IMPORT___ = __webpack_require__(2);
 exports = ___CSS_LOADER_API_IMPORT___(false);
 // Module
-exports.push([module.i, ".illustration[data-v-ace9118e]{position:relative;height:30rem}.illustration__img[data-v-ace9118e]{position:absolute;bottom:0;width:80%}.illustration__img--1[data-v-ace9118e]{left:0;z-index:2}.illustration__img--2[data-v-ace9118e]{top:25%;z-index:1}.illustration__img--3[data-v-ace9118e]{top:-2%}.illustration__img--4[data-v-ace9118e]{top:-20%;left:-20%}.illustration__img--5[data-v-ace9118e]{top:-20%;right:-5%}.illustration__img--7[data-v-ace9118e]{top:-2%;right:-2%}.illustration__img--6[data-v-ace9118e]{top:0;left:-22%}.services__data[data-v-ace9118e]{text-align:center}.see-project-btn[data-v-ace9118e]{opacity:0}", ""]);
+exports.push([module.i, ".illustration[data-v-71832802]{position:relative;height:30rem}.illustration__img[data-v-71832802]{position:absolute;bottom:0;width:80%}.illustration__img--1[data-v-71832802]{left:0;z-index:2}.illustration__img--2[data-v-71832802]{top:25%;z-index:1}.illustration__img--3[data-v-71832802]{top:-2%}.illustration__img--4[data-v-71832802]{top:-20%;left:-20%}.illustration__img--5[data-v-71832802]{top:-20%;right:-5%}.illustration__img--7[data-v-71832802]{top:-2%;right:-2%}.illustration__img--6[data-v-71832802]{top:0;left:-22%}.services__data[data-v-71832802]{text-align:center}.see-project-btn[data-v-71832802]{opacity:0}", ""]);
 // Exports
 module.exports = exports;
 
@@ -713,7 +713,7 @@ module.exports = exports;
 /* 102 */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__.p + "img/luka.fb9474d.jpeg";
+module.exports = __webpack_require__.p + "img/luka.c35be7b.jpeg";
 
 /***/ }),
 /* 103 */,
@@ -878,7 +878,7 @@ var component = Object(componentNormalizer["a" /* default */])(
   false,
   injectStyles,
   "632c53df",
-  "38fe92ce"
+  "938d6f6e"
   
 )
 
@@ -892,12 +892,12 @@ var component = Object(componentNormalizer["a" /* default */])(
 // ESM COMPAT FLAG
 __webpack_require__.r(__webpack_exports__);
 
-// CONCATENATED MODULE: ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/@nuxt/components/dist/loader.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./components/ui/Services.vue?vue&type=template&id=ace9118e&scoped=true&
-var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('section',{staticClass:"mt-12 md:mt-32 services"},[_vm._ssrNode("<h1 class=\"capitalize text-3xl md:text-4xl font-bold leading-none\" data-v-ace9118e>\n    my top skills\n  </h1> <p class=\"capitalize mt-2 text-lg\" data-v-ace9118e>what i do</p> "),_c('CustomBorder'),_vm._ssrNode(" "),_vm._ssrNode("<div class=\"grid grid-cols-1 lg:grid-cols-2 mt-10 rounded-lg bg-kjColorLight dark:bg-kjColorBlack border-2 border-kjColorLight\" data-v-ace9118e>","</div>",[_vm._ssrNode("<div class=\"p-5 md:mx-8 services__data\" data-v-ace9118e>","</div>",[_vm._ssrNode("<h2 class=\"text-lg font-black uppercase mb-3 data-2\" data-v-ace9118e>\n        backend\n      </h2> <p class=\"mb-5 data-2\" data-v-ace9118e>\n        I build scalable and maintainable backend applications using\n        cutting-edge technologies like Django, Node.js, Docker, MySql, MongoDB, and cloud technologies in AWS and GCP\n        \n      </p> <h2 class=\"text-lg font-black uppercase mb-3 data-1\" data-v-ace9118e>\n        frontend\n      </h2> <p class=\"mb-5 data-1\" data-v-ace9118e>\n        I build client-side applications with modern features like SPA and\n        maintain semantic coding style among other best practices for SEO\n        optimisation, using modern tech like Next.js (React), Bootstrap,\n        tailwind and farmerMotion.\n      </p> "),_vm._ssrNode("<div class=\"mt-8 see-project-btn\" data-v-ace9118e>","</div>",[_c('Button',{attrs:{"displayTitle":"SEE MY WORKS","linkTo":"/portfolio"}})],1)],2),_vm._ssrNode(" <div class=\"hidden lg:block illustration\" data-v-ace9118e><img"+(_vm._ssrAttr("src",__webpack_require__(93)))+" alt=\"illustration 1\" class=\"illustration__img illustration__img--1\" data-v-ace9118e> <img"+(_vm._ssrAttr("src",__webpack_require__(94)))+" alt=\"illustration 2\" class=\"illustration__img illustration__img--2\" data-v-ace9118e> <img"+(_vm._ssrAttr("src",__webpack_require__(95)))+" alt=\"illustration 3\" class=\"illustration__img illustration__img--3\" data-v-ace9118e> <img"+(_vm._ssrAttr("src",__webpack_require__(96)))+" alt=\"illustration 4\" class=\"illustration__img illustration__img--4\" data-v-ace9118e> <img"+(_vm._ssrAttr("src",__webpack_require__(97)))+" alt=\"illustration 5\" class=\"illustration__img illustration__img--5\" data-v-ace9118e> <img"+(_vm._ssrAttr("src",__webpack_require__(98)))+" alt=\"illustration 6\" class=\"illustration__img illustration__img--6\" data-v-ace9118e> <img"+(_vm._ssrAttr("src",__webpack_require__(99)))+" alt=\"illustration 7\" class=\"illustration__img illustration__img--7\" data-v-ace9118e></div>")],2)],2)}
+// CONCATENATED MODULE: ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/@nuxt/components/dist/loader.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./components/ui/Services.vue?vue&type=template&id=71832802&scoped=true&
+var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('section',{staticClass:"mt-12 md:mt-32 services"},[_vm._ssrNode("<h1 class=\"capitalize text-3xl md:text-4xl font-bold leading-none\" data-v-71832802>\n    my top skills\n  </h1> <p class=\"capitalize mt-2 text-lg\" data-v-71832802>what i do</p> "),_c('CustomBorder'),_vm._ssrNode(" "),_vm._ssrNode("<div class=\"grid grid-cols-1 lg:grid-cols-2 mt-10 rounded-lg bg-kjColorLight dark:bg-kjColorBlack border-2 border-kjColorLight\" data-v-71832802>","</div>",[_vm._ssrNode("<div class=\"p-5 md:mx-8 services__data\" data-v-71832802>","</div>",[_vm._ssrNode("<h2 class=\"text-lg font-black uppercase mb-3 data-2\" data-v-71832802>\n        backend\n      </h2> <p class=\"mb-5 data-2\" data-v-71832802>\n        I build scalable and maintainable backend applications using\n        cutting-edge technologies like Django, Node.js, Docker, MySql, MongoDB, and cloud technologies in AWS and GCP\n        \n      </p> <h2 class=\"text-lg font-black uppercase mb-3 data-1\" data-v-71832802>\n        frontend\n      </h2> <p class=\"mb-5 data-1\" data-v-71832802>\n        I build client-side applications with modern features like SPA and\n        maintain semantic coding style among other best practices for SEO\n        optimisation, using modern tech like Next.js (React), Bootstrap,\n        tailwind and farmerMotion.\n      </p> "),_vm._ssrNode("<div class=\"mt-8 see-project-btn\" data-v-71832802>","</div>",[_c('Button',{attrs:{"displayTitle":"SEE MY PORTFOLIO","linkTo":"/portfolio"}})],1)],2),_vm._ssrNode(" <div class=\"hidden lg:block illustration\" data-v-71832802><img"+(_vm._ssrAttr("src",__webpack_require__(93)))+" alt=\"illustration 1\" class=\"illustration__img illustration__img--1\" data-v-71832802> <img"+(_vm._ssrAttr("src",__webpack_require__(94)))+" alt=\"illustration 2\" class=\"illustration__img illustration__img--2\" data-v-71832802> <img"+(_vm._ssrAttr("src",__webpack_require__(95)))+" alt=\"illustration 3\" class=\"illustration__img illustration__img--3\" data-v-71832802> <img"+(_vm._ssrAttr("src",__webpack_require__(96)))+" alt=\"illustration 4\" class=\"illustration__img illustration__img--4\" data-v-71832802> <img"+(_vm._ssrAttr("src",__webpack_require__(97)))+" alt=\"illustration 5\" class=\"illustration__img illustration__img--5\" data-v-71832802> <img"+(_vm._ssrAttr("src",__webpack_require__(98)))+" alt=\"illustration 6\" class=\"illustration__img illustration__img--6\" data-v-71832802> <img"+(_vm._ssrAttr("src",__webpack_require__(99)))+" alt=\"illustration 7\" class=\"illustration__img illustration__img--7\" data-v-71832802></div>")],2)],2)}
 var staticRenderFns = []
 
 
-// CONCATENATED MODULE: ./components/ui/Services.vue?vue&type=template&id=ace9118e&scoped=true&
+// CONCATENATED MODULE: ./components/ui/Services.vue?vue&type=template&id=71832802&scoped=true&
 
 // CONCATENATED MODULE: ./node_modules/babel-loader/lib??ref--2-0!./node_modules/@nuxt/components/dist/loader.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./components/ui/Services.vue?vue&type=script&lang=js&
 //
@@ -1083,8 +1083,8 @@ var component = Object(componentNormalizer["a" /* default */])(
   staticRenderFns,
   false,
   injectStyles,
-  "ace9118e",
-  "1e383353"
+  "71832802",
+  "1e1e75fa"
   
 )
 
@@ -1250,7 +1250,7 @@ var component = Object(componentNormalizer["a" /* default */])(
   false,
   null,
   null,
-  "3c3af720"
+  "6c516f70"
   
 )
 
@@ -1268,12 +1268,12 @@ installComponents(component, {CustomBorder: __webpack_require__(63).default})
 // ESM COMPAT FLAG
 __webpack_require__.r(__webpack_exports__);
 
-// CONCATENATED MODULE: ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/@nuxt/components/dist/loader.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./components/ui/MyWorks.vue?vue&type=template&id=b5cf6570&
-var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('section',{staticClass:"mt-12 md:mt-32 services"},[_vm._ssrNode("<h1 class=\"capitalize text-3xl md:text-4xl font-bold leading-none\">\n    My Works\n  </h1> <p class=\"capitalize mt-2 text-lg\">few of my past and present projects</p> "),_c('CustomBorder'),_vm._ssrNode(" "),_vm._ssrNode("<div>","</div>",[_vm._ssrNode("<h1 class=\"mt-6 text-2xl font-bold capitalize\">Web Applications</h1> "),_vm._ssrNode("<div class=\"mt-8\">","</div>",[_c('PortfolioWebApps')],1),_vm._ssrNode(" "),_vm._ssrNode("<div class=\"max-w-xl shadow-2xl h-40 py-5 md:py-0 px-5 md:px-10 mt-10 md:flex justify-between items-center\">","</div>",[_vm._ssrNode("<p class=\"text-lg font-bold mb-3 md:mb-0\">\n        I cook with these ingredients 👉\n      </p> "),_c('Button',{attrs:{"displayTitle":"MY RESUME","linkTo":"/resume"}})],2)],2)],2)}
+// CONCATENATED MODULE: ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/@nuxt/components/dist/loader.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./components/ui/MyWorks.vue?vue&type=template&id=5b7c9a8e&
+var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('section',{staticClass:"mt-12 md:mt-32 services"},[_vm._ssrNode("<h1 class=\"capitalize text-3xl md:text-4xl font-bold leading-none\">\n    My Portfolio\n  </h1> <p class=\"capitalize mt-2 text-lg\">few of my past and present projects</p> "),_c('CustomBorder'),_vm._ssrNode(" "),_vm._ssrNode("<div>","</div>",[_vm._ssrNode("<h1 class=\"mt-6 text-2xl font-bold capitalize\">Web Applications</h1> "),_vm._ssrNode("<div class=\"mt-8\">","</div>",[_c('PortfolioWebApps')],1),_vm._ssrNode(" "),_vm._ssrNode("<div class=\"max-w-xl shadow-2xl h-40 py-5 md:py-0 px-5 md:px-10 mt-10 md:flex justify-between items-center\">","</div>",[_vm._ssrNode("<p class=\"text-lg font-bold mb-3 md:mb-0\">\n        I cook with these ingredients 👉\n      </p> "),_c('Button',{attrs:{"displayTitle":"MY RESUME","linkTo":"/resume"}})],2)],2)],2)}
 var staticRenderFns = []
 
 
-// CONCATENATED MODULE: ./components/ui/MyWorks.vue?vue&type=template&id=b5cf6570&
+// CONCATENATED MODULE: ./components/ui/MyWorks.vue?vue&type=template&id=5b7c9a8e&
 
 // EXTERNAL MODULE: ./node_modules/vue-loader/lib/runtime/componentNormalizer.js
 var componentNormalizer = __webpack_require__(1);
@@ -1292,7 +1292,7 @@ var component = Object(componentNormalizer["a" /* default */])(
   false,
   null,
   null,
-  "c3f57c5e"
+  "63c88bbe"
   
 )
 
@@ -1334,7 +1334,7 @@ var component = Object(componentNormalizer["a" /* default */])(
   false,
   null,
   null,
-  "3f5f83ea"
+  "c8c18b4a"
   
 )
 
@@ -1377,7 +1377,7 @@ var component = Object(componentNormalizer["a" /* default */])(
   false,
   null,
   null,
-  "6e43dfb8"
+  "6460a718"
   
 )
 

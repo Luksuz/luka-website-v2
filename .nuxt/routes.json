@@ -2,37 +2,43 @@
   {
     "name": "portfolio",
     "path": "/portfolio",
-    "component": "/Users/luksuz/Desktop/GithubPortfolio/luka-website/pages/portfolio/index.vue",
-    "chunkName": "pages/portfolio/index"
+    "component": "/Users/lukamindek/Desktop/website/luka-website-v2/pages/portfolio/index.vue",
+    "chunkName": "pages/portfolio/index",
+    "_name": "_517b78b4"
   },
   {
     "name": "resume",
     "path": "/resume",
-    "component": "/Users/luksuz/Desktop/GithubPortfolio/luka-website/pages/resume/index.vue",
-    "chunkName": "pages/resume/index"
+    "component": "/Users/lukamindek/Desktop/website/luka-website-v2/pages/resume/index.vue",
+    "chunkName": "pages/resume/index",
+    "_name": "_0a4808a5"
   },
   {
     "name": "shelf",
     "path": "/shelf",
-    "component": "/Users/luksuz/Desktop/GithubPortfolio/luka-website/pages/shelf/index.vue",
-    "chunkName": "pages/shelf/index"
+    "component": "/Users/lukamindek/Desktop/website/luka-website-v2/pages/shelf/index.vue",
+    "chunkName": "pages/shelf/index",
+    "_name": "_2a4b8388"
   },
   {
     "name": "shelf-topics-slug",
     "path": "/shelf/topics/:slug?",
-    "component": "/Users/luksuz/Desktop/GithubPortfolio/luka-website/pages/shelf/topics/_slug.vue",
-    "chunkName": "pages/shelf/topics/_slug"
+    "component": "/Users/lukamindek/Desktop/website/luka-website-v2/pages/shelf/topics/_slug.vue",
+    "chunkName": "pages/shelf/topics/_slug",
+    "_name": "_4f28c319"
   },
   {
     "name": "shelf-slug",
     "path": "/shelf/:slug",
-    "component": "/Users/luksuz/Desktop/GithubPortfolio/luka-website/pages/shelf/_slug.vue",
-    "chunkName": "pages/shelf/_slug"
+    "component": "/Users/lukamindek/Desktop/website/luka-website-v2/pages/shelf/_slug.vue",
+    "chunkName": "pages/shelf/_slug",
+    "_name": "_2894e240"
   },
   {
     "name": "index",
     "path": "/",
-    "component": "/Users/luksuz/Desktop/GithubPortfolio/luka-website/pages/index.vue",
-    "chunkName": "pages/index"
+    "component": "/Users/lukamindek/Desktop/website/luka-website-v2/pages/index.vue",
+    "chunkName": "pages/index",
+    "_name": "_dd22c926"
   }
 ]

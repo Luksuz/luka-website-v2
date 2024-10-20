@@ -16,10 +16,10 @@ export default {
    ** See https://nuxtjs.org/api/configuration-head
    */
   head: {
-    title: 'Luka Minđek. Full-stack developer',
+    title: 'Luka Minđek. AI Software Engineer',
     meta: [
       ...createSEOMeta({
-        title: 'Luka Minđek. Full-stack developer',
+        title: 'Luka Minđek. AI Software Engineer',
         intro:
           "I am an AI software engineer from Varaždin, Croatia. I build anything, from end-to-end applications to harnessing the power of AI, Feel free to say hi.",
         image: '~/assets/images/favicon.png',

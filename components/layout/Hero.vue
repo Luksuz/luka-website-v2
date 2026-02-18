@@ -27,15 +27,14 @@
         <a href="https://www.joinveet.com/" target="_blank"><u>Veet</u></a>
       </p> -->
       <p class="uppercase font-bold des text-center md:text-left px-5 md:px-0">
-        AI SOFTWARE ENGINEER
+        AI ENGINEER
       </p>
       <p
         class="text-kjColorGray dark:text-kjColorLight text-sm mt-10 text-center md:text-left px-5 md:px-0 md:w-64 message"
       >
-      AI Software Engineer from Varaždin, Croatia, passionate about creating smart, scalable solutions.
-      I specialize in integrating AI into modern applications and love solving complex problems with innovative tech.
-      My work spans full-stack development, backend architecture,
-      and AI-driven features. Say hi!
+      AI Engineer from Varaždin, Croatia, specializing in building smart, scalable AI solutions.
+      From NLP and Computer Vision to agentic systems and custom AI models,
+      I design, train, and deploy AI across diverse environments. Say hi!
       </p>
 
       <div class="mt-10 talk-wrapper">

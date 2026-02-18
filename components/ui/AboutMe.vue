@@ -77,18 +77,22 @@
               </div>
 
               <p>
-                I am a skilled AI software engineer with extensive 
-                experience in designing and building comprehensive AI-powered applications.
+                I am an AI engineer with 8+ years of experience designing, training, and deploying
+                custom AI systems across CPUs, GPUs (NVIDIA and AMD), and TPUs.
               </p>
 
               <p class="mt-2">
-                Throughout my career, I have focused on technical excellence, 
-                particularly in the NLP ecosystem where I’ve developed a niche. While image processing remains my primary interest, 
-                I’ve also specialized in NLP and agentic system development due to evolving circumstances.
+                My expertise spans Natural Language Processing, Computer Vision, agentic systems,
+                and custom AI models built with PyTorch, TensorFlow, and Hugging Face.
+                I've delivered 50+ projects with 30+ ML models achieving 95%+ accuracy.
               </p>
 
               <p class="mt-2">
                 Outside of coding, I enjoy working out, hiking, playing chess, and continuously finding ways to improve myself.
+              </p>
+
+              <p class="mt-4">
+                Learn more at <a href="https://mindx.global" target="_blank" rel="noopener" class="font-bold underline text-kjColorPrime">mindx.global</a>
               </p>
             </div>
           </div>

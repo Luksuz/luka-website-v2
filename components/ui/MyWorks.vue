@@ -1,13 +1,13 @@
 <template>
   <section class="mt-12 md:mt-32 services">
     <h1 class="capitalize text-3xl md:text-4xl font-bold leading-none">
-      A small part of my Portfolio
+      Case Studies
     </h1>
-    <p class="capitalize mt-2 text-lg">Here i displayed a small part of my notable work</p>
+    <p class="capitalize mt-2 text-lg">Real-world AI solutions delivered for clients</p>
     <CustomBorder />
 
     <div>
-      <h1 class="mt-6 text-2xl font-bold capitalize">Web Applications</h1>
+      <h1 class="mt-6 text-2xl font-bold capitalize">AI Projects</h1>
 
       <div class="mt-8">
         <PortfolioWebApps />

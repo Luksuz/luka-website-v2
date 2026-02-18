@@ -15,7 +15,7 @@
           Since 2018
         </div>
         <h3 class="mt-8 md:mt-0 font-bold">Working remotely</h3>
-        <p class="mt-2">Full-stack developer</p>
+        <p class="mt-2">AI Engineer</p>
       </div>
       <div class="ml-8">
         <h3 class="font-bold">
@@ -39,13 +39,13 @@
             ><u>Spasora Limited</u></a
           >
         </h3>
-        <p class="mt-2">Fullstack developer (Part-time)</p>
+        <p class="mt-2">AI Engineer (Part-time)</p>
       </div>
       <div class="ml-8 mt-8">
         <h3 class="font-bold">
           <a href="https://novugrid.com" target="_blank"><u>Novugrid</u></a>
         </h3>
-        <p class="mt-2">Fullstack developer (Full-time)</p>
+        <p class="mt-2">AI Engineer (Full-time)</p>
       </div>
 
       <div class="flex justify-between items-center flex-wrap">

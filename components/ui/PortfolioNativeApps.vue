@@ -28,12 +28,10 @@
 </template>
 
 <script>
-import { ipaMastery } from '~/docs/portfolios.js';
-
 export default {
   data() {
     return {
-      nativeApps: [ipaMastery]
+      nativeApps: []
     };
   }
 };

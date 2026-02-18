@@ -1,0 +1,57 @@
+# Luka Minđek - AI Engineer
+
+> AI engineer from Varaždin, Croatia, specializing in NLP, Computer Vision, agentic systems, and custom AI models. 8+ years of experience designing, training, and deploying AI systems across CPUs, GPUs, and TPUs.
+
+## About
+
+Luka Minđek is the Founder & CEO of MindX (mindx.global), an AI engineering consultancy. He builds smart, scalable AI solutions for real-world applications using PyTorch, TensorFlow, and Hugging Face.
+
+## Expertise
+
+- Natural Language Processing (NLP): Document summarization, sentiment analysis, chatbots, data extraction, multi-language translation
+- Computer Vision: Image classification, object detection, identity verification, video analysis, OCR
+- Agentic Systems: Custom AI agents, LLM-powered workflows, autonomous processing
+- Custom AI Models: Training and fine-tuning models with 95%+ accuracy
+
+## Case Studies
+
+### Segwitz - Computer Vision Quality Control
+85% reduction in manual QA process, saving 120+ hours monthly. Accuracy improved from 72% to 98.5%.
+Technologies: Python, PyTorch, Computer Vision, OpenCV
+
+### Seven Sigma Group - NLP Pipeline
+Comprehensive NLP pipeline delivered 2 weeks ahead of schedule.
+Technologies: Python, NLP, Hugging Face, FastAPI
+
+### TextValue - Sentiment Analysis
+Automated processing of 10,000+ customer reviews. Analysis time reduced from 3 days to 5 minutes with 94% accuracy.
+Technologies: Python, NLP, TensorFlow, REST API
+
+### Magic Net - Contract Processing
+Contract generation reduced from 45 minutes to under 2 minutes. 3,000+ contracts processed with zero errors.
+Technologies: Python, NLP, LLMs, Document AI
+
+### Anehi - Medical Image Analysis
+Patient image analysis in 8 seconds with 96% diagnostic accuracy. Patient satisfaction increased by 40%.
+Technologies: Python, PyTorch, Medical Imaging, Computer Vision
+
+### Meta BaZi - AI-Powered Web Application
+Chinese astrology web app with AI integration, user accounts, chatbots, and custom prompts. Delivered in 5-6 weeks.
+Technologies: Next.js, React, Node.js, OpenAI API
+
+## Stats
+
+- 50+ projects delivered
+- 30+ ML models with 95%+ accuracy
+- 50+ production applications
+- 100% client satisfaction rate
+- 5.0/5 overall rating
+
+## Links
+
+- Website: https://mindx.global
+- Email: lukamindjek@gmail.com
+
+## Tech Stack
+
+Python, PyTorch, TensorFlow, Hugging Face, OpenCV, React, Next.js, Node.js, Django, FastAPI, AWS, GCP, Docker, PostgreSQL, MongoDB, Redis

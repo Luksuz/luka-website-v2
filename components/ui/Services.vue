@@ -31,7 +31,7 @@
           modern, fast, cross-platform, and popular.
         </p> -->
         <div class="mt-8 see-project-btn">
-          <Button displayTitle="SEE MY PORTFOLIO" linkTo="/portfolio" />
+          <Button displayTitle="SEE CASE STUDIES" linkTo="/portfolio" />
         </div>
       </div>
       <div class="hidden lg:block illustration">
@@ -85,7 +85,7 @@ export default {
       services: [
         {
           title: 'Web development',
-          des: 'I build websites and web applications.'
+          des: 'I build end-to-end AI-powered applications.'
         },
         {
           title: 'API development',

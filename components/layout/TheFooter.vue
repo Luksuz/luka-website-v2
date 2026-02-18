@@ -40,6 +40,9 @@
 
 
 
+      <p class="py-1 px-2">
+        Learn more at <a href="https://mindx.global" target="_blank" rel="noopener" class="underline font-bold">mindx.global</a>
+      </p>
       <p class="py-1 px-2">&copy; {{ year }} luka all rights reserved</p>
     </div>
   </footer>

@@ -16,12 +16,12 @@ export default {
    ** See https://nuxtjs.org/api/configuration-head
    */
   head: {
-    title: 'Luka Minđek. AI Software Engineer',
+    title: 'Luka Minđek | AI Engineer',
     meta: [
       ...createSEOMeta({
-        title: 'Luka Minđek. AI Software Engineer',
+        title: 'Luka Minđek | AI Engineer',
         intro:
-          "I am an AI software engineer from Varaždin, Croatia. I build anything, from end-to-end applications to harnessing the power of AI, Feel free to say hi.",
+          "AI engineer from Varaždin, Croatia, specializing in NLP, Computer Vision, and agentic AI systems. Building smart, scalable AI solutions with 8+ years of experience.",
         image: '~/assets/images/favicon.png',
         url: process.env.HOST_NAME
       }),
@@ -40,7 +40,31 @@ export default {
         href:
           'https://cdn.jsdelivr.net/npm/prismjs@1.20.0/themes/prism-tomorrow.css'
       }
-    ]
+    ],
+    htmlAttrs: {
+      lang: 'en'
+    },
+    script: [
+      {
+        type: 'application/ld+json',
+        innerHTML: JSON.stringify({
+          '@context': 'https://schema.org',
+          '@type': 'Person',
+          name: 'Luka Minđek',
+          jobTitle: 'AI Engineer',
+          description: 'AI engineer specializing in NLP, Computer Vision, agentic systems, and custom AI models.',
+          url: process.env.HOST_NAME,
+          sameAs: ['https://mindx.global'],
+          knowsAbout: ['Artificial Intelligence', 'Machine Learning', 'NLP', 'Computer Vision', 'PyTorch', 'TensorFlow'],
+          worksFor: {
+            '@type': 'Organization',
+            name: 'MindX',
+            url: 'https://mindx.global'
+          }
+        })
+      }
+    ],
+    __dangerouslyDisableSanitizers: ['script']
   },
   /*
    ** Global CSS

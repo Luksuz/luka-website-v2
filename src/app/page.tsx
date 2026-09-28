@@ -3,6 +3,7 @@ import Link from "next/link";
 import Page, { Block } from "@/components/Page";
 import Hero from "@/components/Hero";
 import Icon from "@/components/Icon";
+import { PhoneTrio } from "@/components/Phone";
 import { Pic, Stat, IconTile, Chip } from "@/components/Bits";
 import { person } from "@/content/site";
 import { publishedAchievements, formatMonth } from "@/content/achievements";
@@ -28,7 +29,10 @@ const nowList = [
 const moreLink = "inline-flex items-center gap-2 rounded-full bg-surface px-5 py-2.5 text-sm font-semibold text-ink shadow-[var(--shadow-float)] hover:text-accent";
 
 export default function Home() {
-  const featured = projects[0];
+  const featured = projects.find((p) => p.id === "sofi");
+  const more = ["compound", "cyber-shepherd", "solar-scan"]
+    .map((id) => projects.find((p) => p.id === id))
+    .filter((p): p is NonNullable<typeof p> => Boolean(p));
   return (
     <Page current="/" bare hero={<Hero />} schema={siteGraph([webPage("WebPage", title, "", description)])}>
       {/* Numbers */}
@@ -108,21 +112,44 @@ export default function Home() {
         eyebrow="Work"
         title="Selected work"
         hl="work"
+        intro="Apps I built myself, AI experiments and a hackathon win."
         action={<Link href="/work" className={moreLink}>All work <Icon name="arrow" className="h-4 w-4" /></Link>}
       >
         {featured && (
-          <article className="grid items-center gap-8 rounded-3xl bg-surface p-4 shadow-[var(--shadow-float)] sm:p-6 lg:grid-cols-[1.1fr_1fr]">
-            {featured.image && (
-              <Pic src={featured.image.src} alt={featured.image.alt} width={featured.image.width} height={featured.image.height} className="aspect-[16/10] w-full shadow-none" />
-            )}
-            <div className="px-2 pb-2">
-              <Chip tone="sun">🏆 {featured.kind}</Chip>
-              <h3 className="mt-4 text-3xl font-semibold text-ink">{featured.name}</h3>
-              <p className="mt-3 text-lg text-muted">{featured.summary}</p>
-              <p className="mt-3 text-muted">{featured.role}</p>
+          <article className="grid items-center overflow-hidden rounded-[32px] bg-surface shadow-[var(--shadow-float)] lg:grid-cols-2">
+            <div className="flex items-end justify-center bg-[radial-gradient(80%_80%_at_50%_100%,#4f7dff_0%,#1f47d6_55%,#1a36a8_100%)] px-6 pt-10">
+              <div className="w-full translate-y-6">{featured.screens && <PhoneTrio screens={featured.screens} />}</div>
+            </div>
+            <div className="p-6 sm:p-10">
+              <Chip tone="sky">{featured.kind}</Chip>
+              <h3 className="mt-4 text-3xl font-semibold text-ink sm:text-4xl">{featured.name}</h3>
+              <p className="mt-4 text-lg text-muted">{featured.summary}</p>
+              <p className="mt-6">
+                <Link href={`/work#${featured.id}`} className={moreLink}>More about {featured.name} <Icon name="arrow" className="h-4 w-4" /></Link>
+              </p>
             </div>
           </article>
         )}
+        <ul className="mt-6 grid gap-5 md:grid-cols-3">
+          {more.map((p) => (
+            <li key={p.id}>
+              <Link href={`/work#${p.id}`} className="group flex h-full items-center gap-4 rounded-3xl bg-surface p-3 shadow-[var(--shadow-float)] transition-transform hover:-translate-y-1">
+                <img
+                  src={p.screens?.[1]?.src ?? p.image?.src ?? ""}
+                  alt=""
+                  width={120}
+                  height={120}
+                  loading="lazy"
+                  className={`h-24 w-24 shrink-0 rounded-2xl object-cover ${p.screens ? "object-top" : ""}`}
+                />
+                <span>
+                  <span className="block text-xs font-medium text-accent">{p.kind}</span>
+                  <span className="mt-0.5 block text-lg font-semibold text-ink group-hover:text-accent">{p.name}</span>
+                </span>
+              </Link>
+            </li>
+          ))}
+        </ul>
         <h3 className="mt-12 text-xl font-semibold text-ink">Client work at MindX Global</h3>
         <ul className="mt-5 grid grid-cols-2 gap-4 lg:grid-cols-4">
           {mindxWork.slice(0, 4).map((w) => (

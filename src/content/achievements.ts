@@ -53,6 +53,12 @@ export const achievements: Achievement[] = [
     date: "2026-06",
     summary:
       "A 48-hour AI hackathon with 500 builders, investors in the room and finals on the main stage, during Amsterdam Tech Week. No prize this time, but a great weekend of building and meeting people.",
+    image: {
+      src: "/images/megathon-team.webp",
+      alt: "Luka Minđek with his team at MEGATHON Amsterdam, giving a thumbs up at a table of laptops late at night",
+      width: 1400,
+      height: 878,
+    },
     source: "https://megathon.xyz/",
     published: true,
   },

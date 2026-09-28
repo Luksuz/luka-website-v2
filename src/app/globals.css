@@ -1,19 +1,25 @@
 @import "tailwindcss";
 
-/* MindX "Concrete Modern" palette — same values as mindx.global */
+/* Soft, airy portfolio look: cool grey-blue page, white-ish card, one blue accent. */
 @theme {
-  --color-page: #fafaf9;
-  --color-surface: #ffffff;
-  --color-ink: #1c1917;
-  --color-muted: #57534e;
-  --color-line: #e7e5e4;
-  --color-stone: #f5f5f4;
-  --color-accent: #ea580c;
-  --color-accent-dark: #c2410c;
-  --color-teal: #0d9488;
+  --color-page: #E6EAF0;
+  --color-card: #F2F4F7;
+  --color-surface: #FFFFFF;
+  --color-ink: #1E2530;
+  --color-muted: #5B6573;
+  --color-line: #D9DEE6;
+  --color-stone: #EDF0F4;
+  --color-accent: #2F80ED;
+  --color-accent-dark: #1F63C2;
+  --color-teal: #2F80ED;
 
-  --font-sans: var(--font-dm-sans), ui-sans-serif, system-ui, sans-serif;
-  --font-display: var(--font-jakarta), ui-sans-serif, system-ui, sans-serif;
+  --font-sans: var(--font-jost), ui-sans-serif, system-ui, sans-serif;
+  --font-display: var(--font-jost), ui-sans-serif, system-ui, sans-serif;
+  --font-name: var(--font-archivo), var(--font-jost), sans-serif;
+
+  --shadow-soft: 0 30px 80px -30px rgba(30, 37, 48, 0.25), 0 10px 30px -15px rgba(30, 37, 48, 0.12);
+  --shadow-float: 0 18px 40px -18px rgba(30, 37, 48, 0.28);
+  --shadow-accent: 0 14px 30px -10px rgba(47, 128, 237, 0.55);
 }
 
 html {
@@ -29,7 +35,7 @@ body {
 
 h1, h2, h3 {
   font-family: var(--font-display);
-  letter-spacing: -0.015em;
+  letter-spacing: -0.01em;
   line-height: 1.2;
 }
 
@@ -40,5 +46,35 @@ a {
 :focus-visible {
   outline: 2px solid var(--color-accent);
   outline-offset: 2px;
-  border-radius: 2px;
+  border-radius: 4px;
+}
+
+/* Big wide name with a soft white offset outline, like pressed type. */
+.hero-name {
+  font-family: var(--font-name);
+  letter-spacing: -0.01em;
+  line-height: 0.92;
+  color: var(--color-ink);
+  text-shadow: 3px 3px 0 #fff, 4px 4px 0 rgba(30, 37, 48, 0.12);
+}
+
+/* Silver spheres floating in the hero. */
+.orb {
+  position: absolute;
+  border-radius: 9999px;
+  background: radial-gradient(circle at 32% 28%, #ffffff 0%, #d9dee6 38%, #9aa3b0 75%, #7d8794 100%);
+  box-shadow: 0 10px 18px -8px rgba(30, 37, 48, 0.35);
+}
+.orb-ring {
+  position: absolute;
+  border-radius: 9999px;
+  border: 7px solid #b7bfca;
+  box-shadow: inset 0 2px 3px rgba(255, 255, 255, 0.9), 0 8px 14px -6px rgba(30, 37, 48, 0.35);
+  transform: rotate(35deg) scaleX(0.72);
+}
+.dot-soft {
+  position: absolute;
+  border-radius: 9999px;
+  background: rgba(255, 255, 255, 0.85);
+  filter: blur(0.5px);
 }

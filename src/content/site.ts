@@ -11,7 +11,7 @@ export const person = {
   shortTitle: "AI engineer · Founder of MindX Global",
   location: { city: "Varaždin", country: "Croatia", countryCode: "HR" },
   email: "lukamindjek@gmail.com",
-  image: "/images/luka-mindek.webp",
+  image: "/images/luka-cutout.webp",
   links: {
     linkedin: "https://www.linkedin.com/in/lukamindek/",
     github: "https://github.com/Luksuz",

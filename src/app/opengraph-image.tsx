@@ -14,14 +14,14 @@ export default async function OgImage() {
   const src = `data:image/png;base64,${photo.toString("base64")}`;
   return new ImageResponse(
     (
-      <div style={{ width: "100%", height: "100%", display: "flex", alignItems: "center", background: "#fafaf9", padding: 80, gap: 64 }}>
+      <div style={{ width: "100%", height: "100%", display: "flex", alignItems: "center", background: "#E6EAF0", padding: 80, gap: 64 }}>
         <div style={{ display: "flex", flexDirection: "column", flex: 1 }}>
-          <div style={{ width: 96, height: 10, background: "#ea580c", marginBottom: 40 }} />
-          <div style={{ fontSize: 80, fontWeight: 800, color: "#1c1917", lineHeight: 1.05 }}>{person.name}</div>
-          <div style={{ fontSize: 38, color: "#c2410c", marginTop: 24 }}>AI engineer · Founder of MindX Global</div>
-          <div style={{ fontSize: 30, color: "#57534e", marginTop: 20 }}>Varaždin, Croatia · lukamindek.com</div>
+          <div style={{ width: 96, height: 10, background: "#2F80ED", marginBottom: 40 }} />
+          <div style={{ fontSize: 80, fontWeight: 800, color: "#1E2530", lineHeight: 1.05 }}>{person.name}</div>
+          <div style={{ fontSize: 38, color: "#1F63C2", marginTop: 24 }}>AI engineer · Founder of MindX Global</div>
+          <div style={{ fontSize: 30, color: "#5B6573", marginTop: 20 }}>Varaždin, Croatia · lukamindek.com</div>
         </div>
-        <img src={src} width={360} height={360} style={{ borderRadius: 9999, border: "6px solid #e7e5e4" }} />
+        <img src={src} width={360} height={360} style={{ borderRadius: 9999, border: "6px solid #ffffff" }} />
       </div>
     ),
     size,

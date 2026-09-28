@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import Page, { Section } from "@/components/Page";
+import Hero from "@/components/Hero";
 import { person } from "@/content/site";
 import { publishedAchievements, formatMonth } from "@/content/achievements";
 import { projects } from "@/content/work";
@@ -15,39 +16,7 @@ export const metadata: Metadata = pageMeta({ title: title, description, path: "/
 
 export default function Home() {
   return (
-    <Page current="/" schema={siteGraph([webPage("WebPage", title, "", description)])}>
-      <div className="flex flex-col-reverse gap-8 sm:flex-row sm:items-center">
-        <div className="flex-1">
-          <h1 className="text-4xl font-extrabold text-ink sm:text-5xl">{person.name}</h1>
-          <p className="mt-3 text-lg font-medium text-accent-dark">{person.shortTitle}</p>
-          <p className="mt-5 text-lg text-muted">
-            I'm an AI engineer from {person.location.city}, {person.location.country}. I build software that reads
-            documents and images — invoices, forms, drawings, photos — and turns them into data a business can use.
-            I run <a href={person.links.mindx} className="font-medium text-ink underline hover:text-accent-dark">MindX Global</a>,
-            where I build these systems for clients.
-          </p>
-          <p className="mt-6 flex flex-wrap gap-3">
-            <a
-              href={`mailto:${person.email}`}
-              className="rounded-md bg-accent px-4 py-2 font-medium text-white hover:bg-accent-dark"
-            >
-              Email me
-            </a>
-            <Link href="/about" className="rounded-md border border-line bg-surface px-4 py-2 font-medium text-ink hover:border-accent-dark">
-              About me
-            </Link>
-          </p>
-        </div>
-        <img
-          src={person.image}
-          alt="Portrait of Luka Minđek"
-          width={640}
-          height={640}
-          fetchPriority="high"
-          className="h-40 w-40 rounded-full border border-line sm:h-52 sm:w-52"
-        />
-      </div>
-
+    <Page current="/" hero={<Hero />} schema={siteGraph([webPage("WebPage", title, "", description)])}>
       <Section id="now" title="What I'm doing now">
         <p className="text-muted">
           Most of my time goes into <a href={person.links.mindx} className="text-ink underline hover:text-accent-dark">MindX Global</a>:

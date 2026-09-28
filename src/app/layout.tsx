@@ -1,10 +1,10 @@
 import type { Metadata, Viewport } from "next";
-import { DM_Sans, Plus_Jakarta_Sans } from "next/font/google";
+import { Jost, Archivo_Black } from "next/font/google";
 import { person, siteUrl } from "@/content/site";
 import "./globals.css";
 
-const dmSans = DM_Sans({ subsets: ["latin", "latin-ext"], display: "swap", variable: "--font-dm-sans" });
-const jakarta = Plus_Jakarta_Sans({ subsets: ["latin", "latin-ext"], display: "swap", variable: "--font-jakarta" });
+const jost = Jost({ subsets: ["latin", "latin-ext"], display: "swap", variable: "--font-jost" });
+const archivo = Archivo_Black({ subsets: ["latin", "latin-ext"], display: "swap", weight: "400", variable: "--font-archivo" });
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
@@ -20,11 +20,11 @@ export const metadata: Metadata = {
   formatDetection: { telephone: false },
 };
 
-export const viewport: Viewport = { themeColor: "#fafaf9" };
+export const viewport: Viewport = { themeColor: "#E6EAF0" };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="en" className={`${dmSans.variable} ${jakarta.variable}`}>
+    <html lang="en" className={`${jost.variable} ${archivo.variable}`}>
       <body className="min-h-screen bg-page text-ink antialiased">{children}</body>
     </html>
   );

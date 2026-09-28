@@ -132,7 +132,7 @@ export default function Hero() {
               fetchPriority="high"
               className="h-full w-auto max-w-none object-contain object-bottom drop-shadow-[0_30px_40px_rgba(30,37,48,0.18)]"
             />
-            <DetectBox left={33} top={3} width={36} height={40} />
+            <DetectBox left={35} top={8.5} width={35.5} height={33.5} />
           </span>
         </div>
 

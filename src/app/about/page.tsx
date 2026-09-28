@@ -49,10 +49,9 @@ export default function About() {
           </p>
         </div>
         <div className="relative mx-auto w-full max-w-sm">
-          <div className="relative rotate-2">
-            <Pic src="/images/luka-mountains.webp" alt="Luka Minđek outdoors with mountains behind him" width={900} height={1200} className="aspect-[3/4] w-full" priority />
-            <DetectBox left={32} top={11} width={37} height={38} />
-          </div>
+          {/* The photo is tilted; the detection box stays level with the page. */}
+          <Pic src="/images/luka-mountains.webp" alt="Luka Minđek outdoors with mountains behind him" width={900} height={1200} className="aspect-[3/4] w-full rotate-2" priority />
+          <DetectBox left={34.8} top={18.5} width={31} height={30} />
           <span className="absolute -bottom-4 -left-4 flex items-center gap-2 rounded-2xl bg-surface px-4 py-3 text-sm font-semibold text-ink shadow-[var(--shadow-float)]">
             <IconTile icon="pin" tone="mint" /> {person.location.city}, {person.location.country}
           </span>

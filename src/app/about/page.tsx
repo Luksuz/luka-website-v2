@@ -39,8 +39,8 @@ export default function About() {
           <h1 className="text-4xl font-semibold text-ink sm:text-5xl">{h1}</h1>
           <p className="mt-5 text-lg text-muted">
             Hey, I&apos;m Luka! I&apos;m an AI engineer from {person.location.city}, {person.location.country}, and the founder of{" "}
-            <a href={person.links.mindx} className={link}>MindX Global</a>. I&apos;ve been building software for more than eight
-            years, and most of it comes down to one simple idea: computers should read the boring paperwork, so people
+            <a href={person.links.mindx} className={link}>MindX Global</a>. I&apos;ve been building AI and software for four
+            years now, and most of it comes down to one simple idea: computers should read the boring paperwork, so people
             don&apos;t have to.
           </p>
           <p className="mt-4 text-muted">
@@ -52,7 +52,7 @@ export default function About() {
       </div>
 
       <div className="mt-12 grid grid-cols-2 gap-4 sm:grid-cols-4">
-        <Stat value="8+" label="years building software" />
+        <Stat value="4" label="years building AI" />
         <Stat value="50+" label="projects delivered" />
         <Stat value="30+" label="custom AI systems" />
         <Stat value="1st" label="place at SheepAI 2025" />

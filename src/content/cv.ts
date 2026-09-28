@@ -15,7 +15,7 @@ export const roles: Role[] = [
   {
     title: "Freelance AI and software engineer",
     org: "Independent",
-    // TODO(luka): add the period, e.g. "2018 – 2022"
+    // TODO(luka): add the period, e.g. "2022 – 2023"
     points: [
       "Built web applications end to end: React and Next.js front ends, Node.js and Python back ends, cloud deployment.",
       "Moved into machine learning: text analysis, chatbots and image models for clients.",

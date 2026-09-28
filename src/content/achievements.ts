@@ -69,6 +69,12 @@ export const achievements: Achievement[] = [
     date: "2024-09",
     summary:
       "Six months of full-time training as an AI programmer. I finished 5th in my generation with 91.83% across the knowledge assessments.",
+    image: {
+      src: "/images/lipik-graduation.webp",
+      alt: "The fifth generation of AI programmers at AI Centre Lipik, Luka Minđek among them, holding their certificates at the graduation",
+      width: 1400,
+      height: 933,
+    },
     source: "https://www.compas.com.hr/clanak/1/13291/centar-umjetne-inteligencije-lipik-ispratio-petu-generaciju-ai-strunjaka.html",
     published: true,
   },

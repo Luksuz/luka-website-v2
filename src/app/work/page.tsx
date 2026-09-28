@@ -9,7 +9,7 @@ import { siteGraph, webPage, breadcrumb } from "@/lib/schema";
 const title = "Luka Minđek — work and projects";
 const h1 = "Work and projects";
 const description =
-  "Projects by Luka Minđek: Cyber Shepherd (SheepAI hackathon winner), a container code scanner, a RAG app generator, and client work at MindX Global.";
+  "Projects by Luka Minđek: Cyber Shepherd, winner of the SheepAI hackathon, and client work at MindX Global in document AI and computer vision.";
 
 export const metadata: Metadata = pageMeta({ title, description, path: "/work" });
 

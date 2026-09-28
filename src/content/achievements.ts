@@ -17,7 +17,7 @@ export const achievements: Achievement[] = [
     place: "Infobip campus, Zagreb",
     date: "2025-11",
     summary:
-      "80 developers in 20 teams had nine hours to build something useful with AI. We won with Cyber Shepherd, which scrapes security news, sorts the threats into categories and sends each subscriber only the ones they care about, for example in Slack.",
+      "80 developers in 20 teams had nine hours to build something useful with AI. Ivan Židov and I won with Cyber Shepherd, which scrapes security news, sorts the threats into categories and sends each subscriber only the ones they care about, for example in Slack.",
     image: {
       src: "/images/sheepai-hackathon.webp",
       alt: "Luka Minđek winning 1st place at the SheepAI hackathon in Zagreb with team Cyber Shepherd",

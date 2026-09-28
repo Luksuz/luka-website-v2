@@ -4,7 +4,8 @@ export type Achievement = {
   place: string;
   date: string; // ISO (YYYY-MM or YYYY)
   summary: string;
-  url?: string;
+  image?: { src: string; alt: string; width: number; height: number };
+  source?: string;
   /** Unpublished entries are not rendered and not added to structured data. */
   published: boolean;
 };
@@ -13,29 +14,38 @@ export const achievements: Achievement[] = [
   {
     title: "1st place",
     event: "SheepAI Hackathon",
-    place: "Zagreb, Croatia",
+    place: "Infobip campus, Zagreb",
     date: "2025-11",
     summary:
-      "Won with a teammate against 80 developers in 20 teams. We built Cyber Shepherd, a tool that collects cybersecurity threat reports and sorts them by what matters.",
+      "80 developers in 20 teams had nine hours to build something useful with AI. We won with Cyber Shepherd, which scrapes security news, sorts the threats into categories and sends each subscriber only the ones they care about, for example in Slack.",
+    image: {
+      src: "/images/sheepai-hackathon.webp",
+      alt: "Luka Minđek winning 1st place at the SheepAI hackathon in Zagreb with team Cyber Shepherd",
+      width: 1024,
+      height: 683,
+    },
+    source: "https://shiftmag.dev/inside-sheepai-hackathon-80-developers-vs-info-overload-7282/",
     published: true,
   },
   {
-    // TODO(luka): fill in, then set published: true
-    title: "1st place",
-    event: "Lipik Bootcamp",
-    place: "Lipik, Croatia",
-    date: "TODO",
-    summary: "TODO: one sentence on what you built and who you competed against.",
-    published: false,
+    title: "Winner's place",
+    event: "ABC BootCamps Silicon Valley 2026",
+    place: "San Jose and San Francisco, USA",
+    date: "2026-07",
+    summary:
+      "The SheepAI win came with a place on ABC BootCamps' Silicon Valley programme (12–25 July 2026): two weeks of startup and entrepreneurship training in the Bay Area.",
+    source: "https://abcbootcamps.com/sheepai-where-ideas-and-ai-become-reality/",
+    published: true,
   },
   {
-    // TODO(luka): name, city and year of the US bootcamp, then set published: true
-    title: "TODO: result or role",
-    event: "TODO: US bootcamp name",
-    place: "TODO: city, USA",
-    date: "TODO",
-    summary: "TODO: one sentence on what it was and what you did there.",
-    published: false,
+    title: "Graduated with 91.83%",
+    event: "AI programmer programme, AI Centre Lipik",
+    place: "Lipik, Croatia",
+    date: "2024-09",
+    summary:
+      "Six months of full-time training as an AI programmer. I finished 5th in my generation with 91.83% across the knowledge assessments.",
+    source: "https://www.compas.com.hr/clanak/1/13291/centar-umjetne-inteligencije-lipik-ispratio-petu-generaciju-ai-strunjaka.html",
+    published: true,
   },
 ];
 

@@ -23,7 +23,7 @@ export function personSchema() {
     ...(publishedAchievements.length > 0 && {
       award: publishedAchievements.map((a) => `${a.title}, ${a.event} (${a.date.slice(0, 4)})`),
     }),
-    sameAs: [person.links.linkedin, person.links.github, person.links.mindxAbout],
+    sameAs: [person.links.linkedin, person.links.github, person.links.instagram, person.links.mindxAbout],
   };
 }
 

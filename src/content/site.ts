@@ -15,6 +15,7 @@ export const person = {
   links: {
     linkedin: "https://www.linkedin.com/in/lukamindek/",
     github: "https://github.com/Luksuz",
+    instagram: "https://www.instagram.com/mindekluka/",
     mindx: mindxUrl,
     mindxAbout: `${mindxUrl}/about`,
   },

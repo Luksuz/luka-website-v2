@@ -16,7 +16,13 @@ export const projects: Project[] = [
     kind: "Hackathon winner · 2025",
     summary:
       "Collects cybersecurity threat reports from many sources, removes duplicates and ranks them so a security team reads the important ones first.",
-    role: "Built with one teammate at the SheepAI hackathon in Zagreb. 1st place of 20 teams.",
+    role: "Built with one teammate in nine hours at the SheepAI hackathon in Zagreb. 1st place of 20 teams.",
+    image: {
+      src: "/images/sheepai-hackathon.webp",
+      width: 1024,
+      height: 683,
+      alt: "Team Cyber Shepherd with the 1st place cheque at the SheepAI hackathon",
+    },
   },
   {
     name: "Container Code Scanner",
@@ -60,10 +66,12 @@ export const projects: Project[] = [
 
 /** Client work lives on MindX; here it is only listed and linked. */
 export const mindxWork = [
-  { name: "Company knowledge assistant with sources", href: `${mindxUrl}/blog/geobim-knowledge` },
-  { name: "Order extraction from emails and PDFs", href: `${mindxUrl}/blog/order-extraction` },
-  { name: "Pet food label compliance checks", href: `${mindxUrl}/blog/food-label-compliance` },
-  { name: "Handwritten form digitizer", href: `${mindxUrl}/blog/handwritten-form-digitizer` },
-  { name: "Insurance claim processing", href: `${mindxUrl}/blog/insurance-claim-processor` },
-  { name: "Floor plan analysis", href: `${mindxUrl}/blog/floor-plan-analyzer` },
+  { name: "Company knowledge assistant with sources", href: `${mindxUrl}/blog/geobim-knowledge`, img: "/images/case-geobim-knowledge-en.webp" },
+  { name: "Order extraction from emails and PDFs", href: `${mindxUrl}/blog/order-extraction`, img: "/images/case-order-extraction.webp" },
+  { name: "Pet food label compliance checks", href: `${mindxUrl}/blog/food-label-compliance`, img: "/images/case-food-label-compliance.webp" },
+  { name: "Handwritten form digitizer", href: `${mindxUrl}/blog/handwritten-form-digitizer`, img: "/images/case-handwritten-form-digitizer.webp" },
+  { name: "Insurance claim processing", href: `${mindxUrl}/blog/insurance-claim-processor`, img: "/images/case-insurance-claim-processor.webp" },
+  { name: "Floor plan analysis", href: `${mindxUrl}/blog/floor-plan-analyzer`, img: "/images/case-floor-plan-analyzer.webp" },
+  { name: "Receipt parser", href: `${mindxUrl}/blog/receipt-parser`, img: "/images/case-receipt-parser.webp" },
+  { name: "Construction progress tracking", href: `${mindxUrl}/blog/construction-tracker`, img: "/images/case-construction-tracker.webp" },
 ];

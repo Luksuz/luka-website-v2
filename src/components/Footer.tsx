@@ -21,6 +21,8 @@ export default function Footer() {
             {" · "}
             <a href={person.links.github} rel="me" className="hover:text-accent-dark">GitHub</a>
             {" · "}
+            <a href={person.links.instagram} rel="me" className="hover:text-accent-dark">Instagram</a>
+            {" · "}
             <a href={person.links.mindx} className="hover:text-accent-dark">MindX Global</a>
           </li>
           <li>© {new Date().getFullYear()} {person.name}</li>

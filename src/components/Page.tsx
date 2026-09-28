@@ -29,7 +29,7 @@ export default function Page({
       ) : (
         <Header current={current} />
       )}
-      <main id="main" className="mx-auto max-w-3xl px-4 pt-12 sm:px-6 sm:pt-16">
+      <main id="main" className="mx-auto max-w-5xl px-4 pt-12 sm:px-6 sm:pt-16">
         <div className="rounded-[28px] bg-card px-5 py-10 shadow-[var(--shadow-soft)] sm:px-12 sm:py-14">{children}</div>
       </main>
       <Footer />

@@ -5,20 +5,20 @@ const cards = [
   {
     href: "/work",
     label: "AI engineer",
-    img: "/images/container-code-scanner.webp",
-    alt: "Container Code Scanner, a computer vision app by Luka Minđek",
-    w: 1200,
-    h: 681,
-    pos: "lg:left-[70%] lg:top-[10%]",
+    img: "/images/ai-document-analysis.webp",
+    alt: "AI reading a technical drawing and turning it into structured data",
+    w: 900,
+    h: 491,
+    pos: "lg:left-[78%] lg:top-[8%]",
   },
   {
     href: mindxUrl,
     label: "Founder, MindX Global",
-    img: "/images/mindx-global.webp",
-    alt: "The MindX Global website",
-    w: 720,
+    img: "/images/mindx-brain.webp",
+    alt: "MindX Global logo, a brain drawn as a circuit",
+    w: 600,
     h: 450,
-    pos: "lg:left-[88%] lg:top-[33%]",
+    pos: "lg:left-[91%] lg:top-[30%]",
   },
   {
     href: "/about",
@@ -27,7 +27,7 @@ const cards = [
     alt: "Luka Minđek winning 1st place at the SheepAI hackathon in Zagreb",
     w: 1024,
     h: 683,
-    pos: "lg:left-[71%] lg:top-[58%]",
+    pos: "lg:left-[79%] lg:top-[62%]",
   },
 ];
 
@@ -98,6 +98,20 @@ export default function Hero() {
                   </svg>
                 </a>
               </li>
+              <li>
+                <a
+                  href={person.links.instagram}
+                  rel="me"
+                  aria-label="Instagram"
+                  className="flex h-11 w-11 items-center justify-center rounded-full bg-surface text-ink shadow-[var(--shadow-float)] hover:text-accent"
+                >
+                  <svg viewBox="0 0 24 24" className="h-5 w-5" fill="none" stroke="currentColor" strokeWidth="2" aria-hidden="true">
+                    <rect x="3" y="3" width="18" height="18" rx="5" />
+                    <circle cx="12" cy="12" r="4" />
+                    <circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none" />
+                  </svg>
+                </a>
+              </li>
             </ul>
           </div>
         </div>
@@ -121,7 +135,7 @@ export default function Hero() {
         {/* Right: floating cards (a row on small screens) */}
         <ul className="relative z-10 flex gap-4 overflow-x-auto px-6 pb-8 pt-6 lg:static lg:block lg:overflow-visible lg:p-0">
           {cards.map((c) => (
-            <li key={c.label} className={`shrink-0 lg:absolute lg:w-[196px] lg:-translate-x-1/2 ${c.pos}`}>
+            <li key={c.label} className={`shrink-0 lg:absolute lg:w-[180px] lg:-translate-x-1/2 ${c.pos}`}>
               <a href={c.href} className="group block w-[196px] text-center lg:w-auto">
                 <span className="block rounded-2xl bg-surface p-2 shadow-[var(--shadow-float)] transition-transform group-hover:-translate-y-1">
                   <img src={c.img} alt={c.alt} width={c.w} height={c.h} loading="lazy" className="aspect-[4/3] w-full rounded-xl object-cover" />
@@ -138,7 +152,7 @@ export default function Hero() {
         <Link
           href="/work"
           aria-label="See my work"
-          className="absolute bottom-10 right-8 z-20 hidden h-12 w-12 items-center justify-center rounded-full bg-surface text-ink shadow-[var(--shadow-float)] hover:text-accent lg:flex"
+          className="absolute bottom-8 right-6 z-20 hidden h-12 w-12 items-center justify-center rounded-full bg-surface text-ink shadow-[var(--shadow-float)] hover:text-accent lg:flex"
         >
           <svg viewBox="0 0 24 24" className="h-5 w-5" fill="none" stroke="currentColor" strokeWidth="2" aria-hidden="true">
             <path d="m9 6 6 6-6 6" />

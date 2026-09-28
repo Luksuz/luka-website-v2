@@ -35,6 +35,7 @@ export type Credential = { name: string; issuer: string; year?: string; publishe
 
 // These came from the old site's tech wall. Confirm each, then set published: true.
 export const credentials: Credential[] = [
+  { name: "AI programmer programme (6 months), 5th of the generation, 91.83%", issuer: "AI Centre Lipik", year: "2024", published: true },
   { name: "Python developer", issuer: "Algebra", published: false },
   { name: "AWS Certified Developer", issuer: "Amazon Web Services", published: false },
   { name: "Google Cloud certification", issuer: "Google", published: false },

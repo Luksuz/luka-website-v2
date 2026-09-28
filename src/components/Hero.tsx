@@ -7,10 +7,10 @@ const cards = [
   {
     href: "/work",
     label: "AI engineer",
-    img: "/images/ai-document-analysis.webp",
-    alt: "AI reading a technical drawing and turning it into structured data",
+    img: "/images/ai-engineer.webp",
+    alt: "Laptop with an invoice being read by AI, the invoice number, date and total pulled out into a checked panel",
     w: 900,
-    h: 491,
+    h: 672,
     pos: "lg:left-[78%] lg:top-[8%]",
   },
   {

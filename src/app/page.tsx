@@ -5,12 +5,13 @@ import Hero from "@/components/Hero";
 import { person } from "@/content/site";
 import { publishedAchievements, formatMonth } from "@/content/achievements";
 import { projects } from "@/content/work";
+import { services } from "@/content/services";
 import { pageMeta } from "@/lib/meta";
 import { siteGraph, webPage } from "@/lib/schema";
 
-const title = `${person.name} — AI engineer, founder of MindX Global`;
+const title = `${person.name} — freelance AI engineer, founder of MindX Global`;
 const description =
-  "Luka Minđek is an AI engineer from Varaždin, Croatia, and founder of MindX Global. He builds AI that reads documents and images for businesses.";
+  "Luka Minđek is a freelance AI engineer from Croatia and founder of MindX Global. Document processing, invoice and PDF extraction, OCR, AI agents and RAG.";
 
 export const metadata: Metadata = pageMeta({ title: title, description, path: "/" });
 
@@ -23,6 +24,23 @@ export default function Home() {
           AI that pulls figures out of PDFs, reads handwriting, checks product labels, makes sense of technical drawings
           and answers questions about a company&apos;s own documents. I work with every client directly, no agency in the
           middle. 50+ projects so far, and still enjoying every one.
+        </p>
+      </Section>
+
+      <Section id="help" title="How I can help">
+        <p className="text-muted">Freelance AI engineering for teams drowning in documents and repetitive steps.</p>
+        <ul className="mt-6 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+          {services.map((s) => (
+            <li key={s.id}>
+              <Link href={`/services#${s.id}`} className="group block h-full rounded-2xl bg-surface p-5 shadow-[var(--shadow-float)] transition-transform hover:-translate-y-1">
+                <h3 className="font-semibold text-ink group-hover:text-accent">{s.title}</h3>
+                <p className="mt-2 text-sm text-muted">{s.short}</p>
+              </Link>
+            </li>
+          ))}
+        </ul>
+        <p className="mt-4">
+          <Link href="/services" className="font-medium text-accent-dark underline">What I build and how we&apos;d work together</Link>
         </p>
       </Section>
 

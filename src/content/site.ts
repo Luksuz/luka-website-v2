@@ -21,7 +21,12 @@ export const person = {
   },
   knowsAbout: [
     "Artificial intelligence",
+    "Intelligent document processing",
     "Document AI",
+    "Invoice data extraction",
+    "AI agents",
+    "Workflow automation",
+    "LLM integration",
     "Computer vision",
     "Optical character recognition",
     "Large language models",
@@ -36,5 +41,6 @@ export const nav = [
   { href: "/", label: "Home" },
   { href: "/about", label: "About" },
   { href: "/work", label: "Work" },
+  { href: "/services", label: "Services" },
   { href: "/cv", label: "CV" },
 ] as const;

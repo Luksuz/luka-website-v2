@@ -10,7 +10,7 @@ export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
   title: { default: `${person.name} — AI engineer, founder of MindX Global`, template: `%s | ${person.name}` },
   description:
-    "Luka Minđek is an AI engineer from Varaždin, Croatia, and the founder of MindX Global. He builds AI that reads documents and images.",
+    "Luka Minđek is a freelance AI engineer from Varaždin, Croatia, and founder of MindX Global. He builds document AI, OCR, AI agents and RAG assistants.",
   applicationName: person.name,
   authors: [{ name: person.name, url: siteUrl }],
   creator: person.name,

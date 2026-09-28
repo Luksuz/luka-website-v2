@@ -52,7 +52,7 @@ export default function Hero() {
             Minđek
           </h1>
           <p className="mt-5 max-w-[360px] text-[16px] leading-[1.75] text-muted">
-            AI engineer from {person.location.city}, {person.location.country}. I teach computers to read the boring
+            Freelance AI engineer from {person.location.city}, {person.location.country}. I teach computers to read the boring
             paperwork so people don&apos;t have to, and I run MindX Global.
           </p>
 

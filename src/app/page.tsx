@@ -19,10 +19,10 @@ export default function Home() {
     <Page current="/" hero={<Hero />} schema={siteGraph([webPage("WebPage", title, "", description)])}>
       <Section id="now" title="What I'm doing now">
         <p className="text-muted">
-          Most of my time goes into <a href={person.links.mindx} className="text-ink underline hover:text-accent-dark">MindX Global</a>:
-          AI that pulls figures out of PDFs, reads handwriting, checks product labels, understands technical drawings and
-          answers questions over a company's own documents. I work directly with each client — there is no agency in between.
-          50+ projects so far.
+          Most days you&apos;ll find me building at <a href={person.links.mindx} className="text-ink underline hover:text-accent-dark">MindX Global</a>:
+          AI that pulls figures out of PDFs, reads handwriting, checks product labels, makes sense of technical drawings
+          and answers questions about a company&apos;s own documents. I work with every client directly, no agency in the
+          middle. 50+ projects so far, and still enjoying every one.
         </p>
       </Section>
 
@@ -60,12 +60,31 @@ export default function Home() {
         </Section>
       )}
 
-      <Section id="contact" title="Get in touch">
+      <Section id="silicon-valley-teaser" title="Fresh from Silicon Valley">
+        <div className="grid items-center gap-6 sm:grid-cols-[1fr_1.4fr]">
+          <img
+            src="/images/abc-golden-gate.webp"
+            alt="Luka Minđek standing in front of the Golden Gate Bridge"
+            width={933}
+            height={1400}
+            loading="lazy"
+            className="aspect-[4/5] w-full rounded-2xl object-cover shadow-[var(--shadow-float)]"
+          />
+          <p className="text-muted">
+            Winning SheepAI with Ivan Židov sent me to California in July 2026 for two weeks of ABC BootCamps: startup
+            workshops, a pitch on stage and a lot of San Francisco.{" "}
+            <Link href="/about#silicon-valley" className="text-ink underline hover:text-accent-dark">See the photos</Link>.
+          </p>
+        </div>
+      </Section>
+
+      <Section id="contact" title="Say hi">
         <p className="text-muted">
-          For projects, email <a href={`mailto:${person.email}`} className="text-ink underline hover:text-accent-dark">{person.email}</a> or
+          Got a pile of documents you&apos;d love to never type in again? Or just want to chat? Email <a href={`mailto:${person.email}`} className="text-ink underline hover:text-accent-dark">{person.email}</a> or
           go straight to <a href={person.links.mindx} className="text-ink underline hover:text-accent-dark">mindx.global</a>.
-          I'm also on <a href={person.links.linkedin} rel="me" className="text-ink underline hover:text-accent-dark">LinkedIn</a> and{" "}
-          <a href={person.links.github} rel="me" className="text-ink underline hover:text-accent-dark">GitHub</a>.
+          You&apos;ll also find me on <a href={person.links.linkedin} rel="me" className="text-ink underline hover:text-accent-dark">LinkedIn</a> and{" "}
+          <a href={person.links.github} rel="me" className="text-ink underline hover:text-accent-dark">GitHub</a> and{" "}
+          <a href={person.links.instagram} rel="me" className="text-ink underline hover:text-accent-dark">Instagram</a>.
         </p>
       </Section>
     </Page>

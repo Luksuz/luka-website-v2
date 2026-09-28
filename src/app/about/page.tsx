@@ -4,6 +4,7 @@ import Page, { Section } from "@/components/Page";
 import { Stat, Pic } from "@/components/Bits";
 import { person } from "@/content/site";
 import { achievements, publishedAchievements, formatMonth } from "@/content/achievements";
+import { abcPhotos, funPhotos } from "@/content/photos";
 import { pageMeta } from "@/lib/meta";
 import { siteGraph, webPage, breadcrumb } from "@/lib/schema";
 
@@ -37,14 +38,14 @@ export default function About() {
         <div>
           <h1 className="text-4xl font-semibold text-ink sm:text-5xl">{h1}</h1>
           <p className="mt-5 text-lg text-muted">
-            I&apos;m Luka Minđek, an AI engineer from {person.location.city}, {person.location.country}, and the founder of{" "}
+            Hey, I&apos;m Luka! I&apos;m an AI engineer from {person.location.city}, {person.location.country}, and the founder of{" "}
             <a href={person.links.mindx} className={link}>MindX Global</a>. I&apos;ve been building software for more than eight
-            years, and for most of that time the work has been about one thing: getting computers to read what people
-            would otherwise have to read and retype.
+            years, and most of it comes down to one simple idea: computers should read the boring paperwork, so people
+            don&apos;t have to.
           </p>
           <p className="mt-4 text-muted">
-            Invoices, orders, handwritten forms, product labels, floor plans, site photos — I build the AI that reads
-            them, pulls out the fields that matter and hands back clean, checked data.
+            Invoices, orders, handwritten forms, product labels, floor plans, site photos — you name it. I build the AI
+            that reads them, picks out what matters and hands back clean, checked data. Nobody misses retyping.
           </p>
         </div>
         <Pic src="/images/luka-mountains.webp" alt="Luka Minđek outdoors with mountains behind him" width={900} height={1200} className="mx-auto aspect-[4/5] w-full max-w-sm" priority />
@@ -54,7 +55,7 @@ export default function About() {
         <Stat value="8+" label="years building software" />
         <Stat value="50+" label="projects delivered" />
         <Stat value="30+" label="custom AI systems" />
-        <Stat value="1st" label="SheepAI hackathon 2025" />
+        <Stat value="1st" label="place at SheepAI 2025" />
       </div>
 
       <Section id="what" title="What I build">
@@ -103,7 +104,7 @@ export default function About() {
                 {a.source && (
                   <a href={a.source} className="mt-1 inline-block text-sm text-accent hover:underline">Source</a>
                 )}
-                {a.image && (
+                {a.image && a.image.width > a.image.height && (
                   <Pic src={a.image.src} alt={a.image.alt} width={a.image.width} height={a.image.height} className="mt-4 aspect-[3/2] w-full max-w-lg" />
                 )}
               </li>
@@ -125,11 +126,42 @@ export default function About() {
         </div>
       </Section>
 
+      <Section id="silicon-valley" title="Two weeks in Silicon Valley">
+        <p className="text-muted">
+          Winning SheepAI came with a pretty great prize: a place on{" "}
+          <a href="https://abcbootcamps.com/programs/abc-silicon-valley/" className={link}>ABC BootCamps Silicon Valley</a>{" "}
+          in July 2026. Two weeks of startup workshops and pitching in San Jose and San Francisco, a stop at Tesla&apos;s
+          factory, and a lot of walking around the city in between. The best lesson fit on one banner:{" "}
+          <em>think big, start small, learn fast</em>.
+        </p>
+        <ul className="mt-6 columns-2 gap-4 sm:columns-3 [&>li]:mb-4">
+          {abcPhotos.map((ph) => (
+            <li key={ph.src} className="break-inside-avoid">
+              <figure>
+                <Pic src={ph.src} alt={ph.alt} width={ph.width} height={ph.height} className="w-full" />
+                <figcaption className="mt-2 text-sm text-muted">{ph.caption}</figcaption>
+              </figure>
+            </li>
+          ))}
+        </ul>
+      </Section>
+
       <Section id="outside" title="Outside work">
         <p className="text-muted">
-          I work out, go hiking and play amateur chess. More of that on{" "}
+          When I&apos;m not building things, I&apos;m working out, hiking, playing (amateur, very amateur) chess or on a road
+          trip. Here are a few shots, in case you want to see the person behind the code. More on{" "}
           <a href={person.links.instagram} rel="me" className={link}>Instagram</a>.
         </p>
+        <ul className="mt-6 grid grid-cols-2 gap-4 sm:grid-cols-4">
+          {funPhotos.map((ph) => (
+            <li key={ph.src}>
+              <figure>
+                <Pic src={ph.src} alt={ph.alt} width={ph.width} height={ph.height} className="aspect-[3/4] w-full" />
+                <figcaption className="mt-2 text-sm text-muted">{ph.caption}</figcaption>
+              </figure>
+            </li>
+          ))}
+        </ul>
       </Section>
 
       <p className="mt-14 text-muted">

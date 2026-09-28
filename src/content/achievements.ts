@@ -28,12 +28,18 @@ export const achievements: Achievement[] = [
     published: true,
   },
   {
-    title: "Winner's place",
+    title: "Took part",
     event: "ABC BootCamps Silicon Valley 2026",
     place: "San Jose and San Francisco, USA",
     date: "2026-07",
     summary:
-      "The SheepAI win came with a place on ABC BootCamps' Silicon Valley programme (12–25 July 2026): two weeks of startup and entrepreneurship training in the Bay Area.",
+      "The prize for winning SheepAI: two weeks of startup workshops and pitching in California with ABC BootCamps, plus a stop at Tesla's factory and a lot of San Francisco.",
+    image: {
+      src: "/images/abc-pitch.webp",
+      alt: "Luka Minđek presenting at ABC BootCamps next to a banner reading Think big, start small, learn fast",
+      width: 933,
+      height: 1400,
+    },
     source: "https://abcbootcamps.com/sheepai-where-ideas-and-ai-become-reality/",
     published: true,
   },

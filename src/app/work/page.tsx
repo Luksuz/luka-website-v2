@@ -18,7 +18,7 @@ export default function Work() {
     <Page current="/work" schema={siteGraph([webPage("CollectionPage", title, "/work", description), breadcrumb("Work", "/work")])}>
       <h1 className="text-4xl font-semibold text-ink sm:text-5xl">{h1}</h1>
       <p className="mt-5 max-w-2xl text-lg text-muted">
-        Things I&apos;ve built on my own and in competitions. Client projects are written up on the MindX blog and shown at the end.
+        Things I&apos;ve built for fun and in competitions, plus the client work I do at MindX. More personal projects are on the way.
       </p>
 
       <div className="mt-10 grid gap-8 md:grid-cols-2">

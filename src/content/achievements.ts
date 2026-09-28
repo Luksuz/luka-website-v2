@@ -36,12 +36,12 @@ export const achievements: Achievement[] = [
     place: "San Jose and San Francisco, USA",
     date: "2026-07",
     summary:
-      "The prize for winning SheepAI: two weeks of startup workshops and pitching in California with ABC BootCamps, plus a stop at Tesla's factory and a lot of San Francisco.",
+      "The prize Ivan Židov and I won at SheepAI: two weeks of startup workshops and pitching in California with ABC BootCamps, plus a stop at Tesla's factory and a lot of San Francisco. We both came home with a certificate of achievement.",
     image: {
-      src: "/images/abc-pitch.webp",
-      alt: "Luka Minđek presenting at ABC BootCamps next to a banner reading Think big, start small, learn fast",
-      width: 933,
-      height: 1400,
+      src: "/images/abc-certificates.webp",
+      alt: "Luka Minđek and Ivan Židov holding their ABC Silicon Valley certificates of achievement on a sunny campus",
+      width: 1400,
+      height: 933,
     },
     source: "https://abcbootcamps.com/sheepai-where-ideas-and-ai-become-reality/",
     published: true,

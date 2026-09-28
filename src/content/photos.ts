@@ -12,8 +12,8 @@ export const abcPhotos: Photo[] = [
 
 /** A few extra shots, just for fun. */
 export const funPhotos: Photo[] = [
-  { src: "/images/shot-las-vegas.webp", alt: "Luka Minđek smiling in front of the Welcome to Fabulous Las Vegas sign at night", caption: "Las Vegas, at night, as you do", width: 1050, height: 1400 },
+  { src: "/images/shot-hiking.webp", alt: "Luka Minđek sitting on white rocks on a mountain meadow, with forest and peaks behind him", caption: "Hiking day, best kind of day", width: 1149, height: 1400 },
+  { src: "/images/shot-gym.webp", alt: "Luka Minđek doing barbell curls in the gym", caption: "Gym first, code after", width: 790, height: 1400 },
   { src: "/images/shot-mustang.webp", alt: "Luka Minđek leaning on a black Ford Mustang on a mountain road", caption: "Road trip mode", width: 787, height: 1400 },
-  { src: "/images/shot-las-vegas-2.webp", alt: "Luka Minđek pointing up in front of the Las Vegas sign", caption: "Pointing at the next goal", width: 1050, height: 1400 },
   { src: "/images/shot-mustang-road.webp", alt: "A black Ford Mustang parked on a hilltop road under a blue sky", caption: "Hills, a Mustang and a very blue sky", width: 787, height: 1400 },
 ];

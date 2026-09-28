@@ -1,0 +1,39 @@
+export const siteUrl = "https://lukamindek.com";
+export const personId = `${siteUrl}/#person`;
+export const mindxUrl = "https://mindx.global";
+export const mindxOrgId = `${mindxUrl}/#organization`;
+
+export const person = {
+  name: "Luka Minđek",
+  // People type the name without "đ"; the domain itself uses "mindek".
+  alternateNames: ["Luka Mindek", "Luka Mindjek"],
+  jobTitle: "AI Engineer and Founder of MindX Global",
+  shortTitle: "AI engineer · Founder of MindX Global",
+  location: { city: "Varaždin", country: "Croatia", countryCode: "HR" },
+  email: "lukamindjek@gmail.com",
+  image: "/images/luka-mindek.webp",
+  links: {
+    linkedin: "https://www.linkedin.com/in/lukamindek/",
+    github: "https://github.com/Luksuz",
+    mindx: mindxUrl,
+    mindxAbout: `${mindxUrl}/about`,
+  },
+  knowsAbout: [
+    "Artificial intelligence",
+    "Document AI",
+    "Computer vision",
+    "Optical character recognition",
+    "Large language models",
+    "Retrieval-augmented generation",
+    "Natural language processing",
+    "Python",
+    "Next.js",
+  ],
+};
+
+export const nav = [
+  { href: "/", label: "Home" },
+  { href: "/about", label: "About" },
+  { href: "/work", label: "Work" },
+  { href: "/cv", label: "CV" },
+] as const;

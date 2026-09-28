@@ -1,0 +1,10 @@
+# Luka Minđek
+
+> AI engineer from Varaždin, Croatia, and founder of MindX Global (https://mindx.global). Builds AI that reads documents and images — invoices, orders, forms, drawings, photos — and turns them into usable data.
+
+- [About](https://lukamindek.com/about): who Luka is, how he works, awards
+- [Work](https://lukamindek.com/work): personal and competition projects; client work links to MindX
+- [CV](https://lukamindek.com/cv): experience and skills
+- [MindX Global](https://mindx.global): Luka's company; case studies and services
+
+Also written: Luka Mindek. Contact: lukamindjek@gmail.com

@@ -1,27 +1,21 @@
-# 👨‍💻Luka Minđek
+# lukamindek.com
 
-> 👨‍💻 This is my personal site. My passion for software development is reflected on this [website](https://www.lukamindek.com).
+Personal site of Luka Minđek. Next.js 16, static export (`out/`), deployed on Netlify.
 
-## 🏗 Building Materials
+```bash
+npm install
+npm run dev     # http://localhost:3000
+npm run build   # writes out/
+npm start       # serves out/
+```
 
-| Nuxt | TailwindCSS | GSAP | Storyblok |
-| :--: | :---------: | :--: | :-------: |
+## Editing content
 
-## 🎨 Features
+All text that changes lives in `src/content/`:
 
-- Full static Nuxt site
-- SSR
-- SPA
-- Blog
-- Tags functionality
-- SEO and social media sharing
-- Dark mode
-- Responsive design
-- Animation
-- Social media and messanger buttons
-- Resume
-- Portfolio
-- Carousel
+- `site.ts` — name, title, links
+- `achievements.ts` — awards (entries with `published: false` are hidden everywhere, including structured data)
+- `work.ts` — projects and links to MindX case studies
+- `cv.ts` — roles, skills, certifications (`published: false` = hidden)
 
-## Preview it here
-www.lukamindek.com
+Search for `TODO(luka)` to find the gaps.

@@ -1,0 +1,31 @@
+import type { Metadata, Viewport } from "next";
+import { DM_Sans, Plus_Jakarta_Sans } from "next/font/google";
+import { person, siteUrl } from "@/content/site";
+import "./globals.css";
+
+const dmSans = DM_Sans({ subsets: ["latin", "latin-ext"], display: "swap", variable: "--font-dm-sans" });
+const jakarta = Plus_Jakarta_Sans({ subsets: ["latin", "latin-ext"], display: "swap", variable: "--font-jakarta" });
+
+export const metadata: Metadata = {
+  metadataBase: new URL(siteUrl),
+  title: { default: `${person.name} — AI engineer, founder of MindX Global`, template: `%s | ${person.name}` },
+  description:
+    "Luka Minđek is an AI engineer from Varaždin, Croatia, and the founder of MindX Global. He builds AI that reads documents and images.",
+  applicationName: person.name,
+  authors: [{ name: person.name, url: siteUrl }],
+  creator: person.name,
+  openGraph: { type: "profile", siteName: person.name, locale: "en_GB", firstName: "Luka", lastName: "Minđek" },
+  twitter: { card: "summary_large_image" },
+  robots: { index: true, follow: true },
+  formatDetection: { telephone: false },
+};
+
+export const viewport: Viewport = { themeColor: "#fafaf9" };
+
+export default function RootLayout({ children }: { children: React.ReactNode }) {
+  return (
+    <html lang="en" className={`${dmSans.variable} ${jakarta.variable}`}>
+      <body className="min-h-screen bg-page text-ink antialiased">{children}</body>
+    </html>
+  );
+}

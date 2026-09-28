@@ -23,19 +23,6 @@ export function IconTile({ icon, tone = "sky", size = "md" }: { icon: IconName; 
   );
 }
 
-export function Eyebrow({ children, light = false }: { children: React.ReactNode; light?: boolean }) {
-  return (
-    <p
-      className={`inline-flex items-center gap-2 rounded-full px-3 py-1 text-[12px] font-semibold uppercase tracking-[0.14em] ${
-        light ? "bg-white/10 text-white" : "bg-accent-soft text-accent-dark"
-      }`}
-    >
-      <span className={`h-1.5 w-1.5 rounded-full ${light ? "bg-white" : "bg-accent"}`} aria-hidden="true" />
-      {children}
-    </p>
-  );
-}
-
 export function Stat({ value, label, icon, tone = "sky" }: { value: string; label: string; icon?: IconName; tone?: Tone }) {
   return (
     <div className="flex items-center gap-4 rounded-2xl bg-surface px-5 py-4 shadow-[var(--shadow-float)]">

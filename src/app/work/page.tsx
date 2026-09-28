@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import Page, { Block } from "@/components/Page";
-import { Pic, Eyebrow, Chip, IconTile, toneBg } from "@/components/Bits";
+import { Pic, Chip, IconTile, toneBg } from "@/components/Bits";
 import { PhoneTrio } from "@/components/Phone";
 import { person } from "@/content/site";
 import { projects, mindxWork, type Project } from "@/content/work";
@@ -28,8 +28,7 @@ export default function Work() {
       <section className="wash relative overflow-hidden rounded-[28px] px-5 py-12 shadow-[var(--shadow-soft)] sm:rounded-[40px] sm:px-12 sm:py-16">
         <span className="orb right-[10%] top-[22%] hidden h-10 w-10 md:block" aria-hidden="true" />
         <span className="orb-ring right-[22%] top-[60%] hidden h-8 w-8 md:block" aria-hidden="true" />
-        <Eyebrow>Portfolio</Eyebrow>
-        <h1 className="mt-4 text-4xl font-semibold text-ink sm:text-[64px] sm:leading-[1.02]">{h1}</h1>
+        <h1 className="text-4xl font-semibold text-ink sm:text-[64px] sm:leading-[1.02]">{h1}</h1>
         <p className="mt-5 max-w-2xl text-lg text-muted">
           Apps I designed and built myself, AI experiments, a hackathon win and a few client builds. The work I do for
           companies at MindX is at the bottom.
@@ -45,7 +44,7 @@ export default function Work() {
         </ul>
       </section>
 
-      <Block id="apps" eyebrow="Mobile apps" title="Apps you can hold" hl="hold" intro="Designed, built and shipped by me, from the first sketch to the App Store paywall.">
+      <Block id="apps" title="Apps you can hold" hl="hold" intro="Designed, built and shipped by me, from the first sketch to the App Store paywall.">
         <div className="space-y-8">
           {apps.map((p, i) => (
             <article key={p.id} id={p.id} aria-labelledby={`${p.id}-title`} className="scroll-mt-8 overflow-hidden rounded-[32px] bg-surface shadow-[var(--shadow-float)]">
@@ -66,7 +65,7 @@ export default function Work() {
         </div>
       </Block>
 
-      <Block id="projects" eyebrow="Projects" title="More things I built" hl="built">
+      <Block id="projects" title="More things I built" hl="built">
         <ul className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
           {others.map((p, i) => (
             <li key={p.id} className={i === 0 || i === others.length - 1 ? "lg:col-span-2" : ""}>
@@ -78,7 +77,7 @@ export default function Work() {
 
       <Block
         id="client-work"
-        eyebrow="For clients"
+       
         title="Client work at MindX Global"
         hl="MindX Global"
         intro={

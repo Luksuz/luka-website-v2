@@ -44,7 +44,7 @@ export default function Home() {
       </section>
 
       {/* Now */}
-      <Block id="now" eyebrow="Right now" title="Building AI that reads paperwork" hl="reads paperwork" className="wash">
+      <Block id="now" title="Building AI that reads paperwork" hl="reads paperwork" className="wash">
         <div className="grid items-center gap-10 lg:grid-cols-[1fr_1.1fr]">
           <div>
             <p className="text-lg text-muted">
@@ -65,12 +65,6 @@ export default function Home() {
           </div>
           <a href={person.links.mindx} className="group relative block">
             <Pic src="/images/mindx-global.webp" alt="The MindX Global homepage" width={720} height={450} className="aspect-[16/10] w-full transition-transform group-hover:-translate-y-1" />
-            <span className="absolute -bottom-4 left-4 flex items-center gap-2 rounded-2xl bg-surface px-4 py-3 text-sm font-semibold text-ink shadow-[var(--shadow-float)]">
-              <IconTile icon="rocket" tone="peach" /> mindx.global
-            </span>
-            <span className="absolute -top-4 right-4 rounded-full bg-ink px-4 py-2 text-xs font-semibold uppercase tracking-wider text-white shadow-[var(--shadow-float)]">
-              Founder
-            </span>
           </a>
         </div>
       </Block>
@@ -78,7 +72,7 @@ export default function Home() {
       {/* Services */}
       <Block
         id="help"
-        eyebrow="Services"
+       
         title="How I can help"
         hl="help"
         intro="Freelance AI engineering for teams drowning in documents and repetitive steps."
@@ -109,7 +103,7 @@ export default function Home() {
       {/* Work */}
       <Block
         id="work"
-        eyebrow="Work"
+       
         title="Selected work"
         hl="work"
         intro="Apps I built myself, AI experiments and a hackathon win."
@@ -165,7 +159,7 @@ export default function Home() {
 
       {/* Achievements */}
       {publishedAchievements.length > 0 && (
-        <Block id="achievements" eyebrow="Wins and milestones" title="Hackathons, bootcamps and a diploma" hl="Hackathons">
+        <Block id="achievements" title="Hackathons, bootcamps and a diploma" hl="Hackathons">
           <ul className="grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
             {publishedAchievements.map((a) => (
               <li key={a.event} className="flex flex-col overflow-hidden rounded-3xl bg-surface shadow-[var(--shadow-float)]">
@@ -203,10 +197,7 @@ export default function Home() {
       <section aria-labelledby="sv-title" className="overflow-hidden rounded-[28px] bg-sky shadow-[var(--shadow-soft)] sm:rounded-[40px]">
         <div className="grid items-center gap-10 px-5 py-12 sm:px-12 sm:py-14 lg:grid-cols-[1fr_1.1fr]">
           <div>
-            <p className="inline-flex items-center gap-2 rounded-full bg-white/70 px-3 py-1 text-[12px] font-semibold uppercase tracking-[0.14em] text-sky-ink">
-              ☀️ July 2026
-            </p>
-            <h2 id="sv-title" className="mt-3 text-3xl font-semibold text-ink sm:text-[44px]">Fresh from Silicon Valley</h2>
+            <h2 id="sv-title" className="text-3xl font-semibold text-ink sm:text-[44px]">Fresh from Silicon Valley</h2>
             <p className="mt-4 text-lg text-ink/75">
               Winning SheepAI with Ivan Židov sent us to California for two weeks of ABC BootCamps: startup workshops, a
               pitch on stage, a stop at Tesla and a lot of San Francisco.

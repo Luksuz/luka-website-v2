@@ -1,6 +1,5 @@
 import { person, calendly } from "@/content/site";
 import Icon from "./Icon";
-import { Eyebrow } from "./Bits";
 
 /** Dark "let's talk" band shown above the footer on every page. */
 export default function CtaBand({ wide = false }: { wide?: boolean }) {
@@ -11,8 +10,7 @@ export default function CtaBand({ wide = false }: { wide?: boolean }) {
         <span className="orb-ring right-[20%] bottom-[16%] hidden h-8 w-8 opacity-60 md:block" aria-hidden="true" />
         <div className="grid items-center gap-8 lg:grid-cols-[1.3fr_1fr]">
           <div>
-            <Eyebrow light>Let&apos;s talk</Eyebrow>
-            <h2 id="cta-title" className="mt-4 text-3xl font-semibold leading-tight sm:text-5xl">
+            <h2 id="cta-title" className="text-3xl font-semibold leading-tight sm:text-5xl">
               Got a pile of documents you never want to retype again?
             </h2>
             <p className="mt-4 max-w-xl text-lg text-white/75">

@@ -2,7 +2,7 @@ import Header from "./Header";
 import Footer from "./Footer";
 import JsonLd from "./JsonLd";
 import CtaBand from "./CtaBand";
-import { Eyebrow, Hl } from "./Bits";
+import { Hl } from "./Bits";
 
 export default function Page({
   current,
@@ -56,14 +56,12 @@ export default function Page({
 export function Section({
   id,
   title,
-  eyebrow,
   hl,
   intro,
   children,
 }: {
   id: string;
   title: string;
-  eyebrow?: string;
   /** Part of the title shown in the accent colour. */
   hl?: string;
   intro?: React.ReactNode;
@@ -71,8 +69,7 @@ export function Section({
 }) {
   return (
     <section aria-labelledby={id} className="mt-16 first:mt-0 sm:mt-20">
-      {eyebrow && <Eyebrow>{eyebrow}</Eyebrow>}
-      <h2 id={id} className={`text-3xl font-semibold text-ink sm:text-[40px] ${eyebrow ? "mt-3" : ""}`}>
+      <h2 id={id} className="text-3xl font-semibold text-ink sm:text-[40px]">
         <Hl text={title} hl={hl} />
       </h2>
       {intro && <p className="mt-3 max-w-2xl text-lg text-muted">{intro}</p>}
@@ -85,7 +82,6 @@ export function Section({
 export function Block({
   id,
   title,
-  eyebrow,
   hl,
   intro,
   className = "bg-card",
@@ -94,7 +90,6 @@ export function Block({
 }: {
   id: string;
   title: string;
-  eyebrow?: string;
   hl?: string;
   intro?: React.ReactNode;
   className?: string;
@@ -105,8 +100,7 @@ export function Block({
     <section aria-labelledby={id} className={`rounded-[28px] px-5 py-10 shadow-[var(--shadow-soft)] sm:rounded-[40px] sm:px-12 sm:py-14 ${className}`}>
       <div className="flex flex-wrap items-end justify-between gap-4">
         <div>
-          {eyebrow && <Eyebrow>{eyebrow}</Eyebrow>}
-          <h2 id={id} className="mt-3 text-3xl font-semibold text-ink sm:text-[44px]">
+          <h2 id={id} className="text-3xl font-semibold text-ink sm:text-[44px]">
             <Hl text={title} hl={hl} />
           </h2>
           {intro && <p className="mt-3 max-w-2xl text-lg text-muted">{intro}</p>}

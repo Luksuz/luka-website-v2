@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import Page, { Section } from "@/components/Page";
-import { Pic, Chip, Eyebrow, IconTile, tones } from "@/components/Bits";
+import { Pic, Chip, IconTile, tones } from "@/components/Bits";
 import { person, personId, siteUrl, calendly } from "@/content/site";
 import { services, steps, faqs } from "@/content/services";
 import { pageMeta } from "@/lib/meta";
@@ -36,8 +36,7 @@ export default function Services() {
       current="/services"
       schema={siteGraph([webPage("WebPage", title, "/services", description), breadcrumb("Services", "/services"), ...serviceSchema])}
     >
-      <Eyebrow>Services</Eyebrow>
-      <h1 className="mt-4 text-4xl font-semibold text-ink sm:text-[52px] sm:leading-[1.08]">{h1}</h1>
+      <h1 className="text-4xl font-semibold text-ink sm:text-[52px] sm:leading-[1.08]">{h1}</h1>
       <p className="mt-5 max-w-2xl text-lg text-muted">
         If your team spends its days retyping PDFs, reading scans or answering the same questions, I can probably help.
         I build AI that reads documents and images and does the boring steps for you, and I build it for real use, not for a demo.
@@ -103,7 +102,7 @@ export default function Services() {
         ))}
       </div>
 
-      <Section id="how" eyebrow="The process" title="How we'd work together" hl="work together">
+      <Section id="how" title="How we'd work together" hl="work together">
         <ol className="grid gap-5 sm:grid-cols-2">
           {steps.map((st, i) => (
             <li key={st.title} className="rounded-3xl bg-surface p-6 shadow-[var(--shadow-float)]">
@@ -115,7 +114,7 @@ export default function Services() {
         </ol>
       </Section>
 
-      <Section id="why" eyebrow="Why me" title="Why people work with me" hl="work with me">
+      <Section id="why" title="Why people work with me" hl="work with me">
         <ul className="grid gap-4 sm:grid-cols-2">
           {why.map((w, i) => (
             <li key={w.text} className="flex items-center gap-4 rounded-3xl bg-surface p-5 text-ink shadow-[var(--shadow-float)]">
@@ -126,7 +125,7 @@ export default function Services() {
         </ul>
       </Section>
 
-      <Section id="faq" eyebrow="FAQ" title="Questions people usually ask" hl="usually ask">
+      <Section id="faq" title="Questions people usually ask" hl="usually ask">
         <div className="divide-y divide-line border-y border-line">
           {faqs.map((f) => (
             <details key={f.q} className="group py-4">

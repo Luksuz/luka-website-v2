@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import Page, { Section } from "@/components/Page";
-import { Stat, Pic, Eyebrow, IconTile, tones } from "@/components/Bits";
+import { Stat, Pic, IconTile, tones } from "@/components/Bits";
 import { person } from "@/content/site";
 import { achievements, publishedAchievements, formatMonth } from "@/content/achievements";
 import { abcPhotos, funPhotos } from "@/content/photos";
@@ -35,8 +35,7 @@ export default function About() {
     <Page current="/about" schema={siteGraph([webPage("ProfilePage", title, "/about", description), breadcrumb("About", "/about")])}>
       <div className="grid items-center gap-10 md:grid-cols-[1.2fr_1fr]">
         <div>
-          <Eyebrow>About me</Eyebrow>
-          <h1 className="mt-4 text-4xl font-semibold text-ink sm:text-[56px] sm:leading-[1.05]">{h1}</h1>
+          <h1 className="text-4xl font-semibold text-ink sm:text-[56px] sm:leading-[1.05]">{h1}</h1>
           <p className="mt-5 text-lg text-muted">
             Hey, I&apos;m Luka! I&apos;m an AI engineer from {person.location.city}, {person.location.country}, and the founder of{" "}
             <a href={person.links.mindx} className={link}>MindX Global</a>. I&apos;ve been building AI and software for four
@@ -50,9 +49,6 @@ export default function About() {
         </div>
         <div className="relative mx-auto w-full max-w-sm">
           <Pic src="/images/luka-mountains.webp" alt="Luka Minđek outdoors with mountains behind him" width={900} height={1200} className="aspect-[3/4] w-full rotate-2" priority />
-          <span className="absolute -bottom-4 -left-4 flex items-center gap-2 rounded-2xl bg-surface px-4 py-3 text-sm font-semibold text-ink shadow-[var(--shadow-float)]">
-            <IconTile icon="pin" tone="mint" /> {person.location.city}, {person.location.country}
-          </span>
         </div>
       </div>
 
@@ -63,7 +59,7 @@ export default function About() {
         <Stat value="1st" label="place at SheepAI 2025" icon="trophy" tone="sun" />
       </div>
 
-      <Section id="what" eyebrow="What I build" title="Computers that read the boring stuff" hl="read">
+      <Section id="what" title="Computers that read the boring stuff" hl="read">
         <p className="text-muted">
           The tools change every few months. Today that usually means vision-language models, OCR and classic computer
           vision, joined with plain software: a database, an API, a simple screen where a person can check the result.
@@ -81,7 +77,7 @@ export default function About() {
         </ul>
       </Section>
 
-      <Section id="how" eyebrow="How I work" title="Four habits that keep projects on track" hl="on track">
+      <Section id="how" title="Four habits that keep projects on track" hl="on track">
         <ol className="grid gap-4 sm:grid-cols-2">
           {steps.map(([t, d], i) => (
             <li key={t} className="rounded-3xl bg-surface p-6 shadow-[var(--shadow-float)]">
@@ -96,7 +92,7 @@ export default function About() {
       </Section>
 
       {publishedAchievements.length > 0 && (
-        <Section id="milestones" eyebrow="Timeline" title="Milestones so far" hl="so far">
+        <Section id="milestones" title="Milestones so far" hl="so far">
           <ol className="relative space-y-8 border-l-2 border-line pl-6">
             {timeline.map((a) => (
               <li key={a.event} className="relative grid gap-5 md:grid-cols-[1fr_300px] md:items-start">
@@ -122,7 +118,7 @@ export default function About() {
         </Section>
       )}
 
-      <Section id="mindx" eyebrow="My company" title="MindX Global">
+      <Section id="mindx" title="MindX Global">
         <div className="grid items-center gap-6 sm:grid-cols-[1fr_1.2fr]">
           <a href={person.links.mindx} className="block">
             <Pic src="/images/mindx-global.webp" alt="The MindX Global homepage" width={720} height={450} className="aspect-[16/10] w-full" />
@@ -135,7 +131,7 @@ export default function About() {
         </div>
       </Section>
 
-      <Section id="silicon-valley" eyebrow="July 2026" title="Two weeks in Silicon Valley" hl="Silicon Valley">
+      <Section id="silicon-valley" title="Two weeks in Silicon Valley" hl="Silicon Valley">
         <p className="text-muted">
           Winning SheepAI came with a pretty great prize: a place on{" "}
           <a href="https://abcbootcamps.com/programs/abc-silicon-valley/" className={link}>ABC BootCamps Silicon Valley</a>{" "}
@@ -155,7 +151,7 @@ export default function About() {
         </ul>
       </Section>
 
-      <Section id="outside" eyebrow="Off the clock" title="Outside work" hl="Outside">
+      <Section id="outside" title="Outside work" hl="Outside">
         <p className="text-muted">
           When I&apos;m not building things, I&apos;m working out, hiking, playing (amateur, very amateur) chess or on a road
           trip. Here are a few shots, in case you want to see the person behind the code. More on{" "}

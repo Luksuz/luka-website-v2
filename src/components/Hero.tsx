@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { person, mindxUrl } from "@/content/site";
+import { DetectBox } from "./Bits";
 
 const cards = [
   {
@@ -122,14 +123,17 @@ export default function Hero() {
             className="absolute bottom-[-20%] left-1/2 aspect-square w-[92%] max-w-[640px] lg:bottom-[-12%] lg:w-[118%] -translate-x-1/2 rounded-full bg-[radial-gradient(circle_at_50%_40%,#ffffff_0%,#f7f8fa_55%,rgba(247,248,250,0)_72%)]"
             aria-hidden="true"
           />
-          <img
-            src="/images/luka-cutout.webp"
-            alt="Luka Minđek"
-            width={1137}
-            height={1400}
-            fetchPriority="high"
-            className="relative z-10 h-full w-auto max-w-none object-contain object-bottom drop-shadow-[0_30px_40px_rgba(30,37,48,0.18)]"
-          />
+          <span className="relative z-10 block h-full">
+            <img
+              src="/images/luka-cutout.webp"
+              alt="Luka Minđek"
+              width={1137}
+              height={1400}
+              fetchPriority="high"
+              className="h-full w-auto max-w-none object-contain object-bottom drop-shadow-[0_30px_40px_rgba(30,37,48,0.18)]"
+            />
+            <DetectBox left={33} top={3} width={36} height={40} />
+          </span>
         </div>
 
         {/* Right: floating cards (a row on small screens) */}

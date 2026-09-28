@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import Page, { Section } from "@/components/Page";
-import { Stat, Pic, Eyebrow, IconTile, tones } from "@/components/Bits";
+import { Stat, Pic, Eyebrow, IconTile, tones, DetectBox } from "@/components/Bits";
 import { person } from "@/content/site";
 import { achievements, publishedAchievements, formatMonth } from "@/content/achievements";
 import { abcPhotos, funPhotos } from "@/content/photos";
@@ -49,7 +49,10 @@ export default function About() {
           </p>
         </div>
         <div className="relative mx-auto w-full max-w-sm">
-          <Pic src="/images/luka-mountains.webp" alt="Luka Minđek outdoors with mountains behind him" width={900} height={1200} className="aspect-[4/5] w-full rotate-2" priority />
+          <div className="relative rotate-2">
+            <Pic src="/images/luka-mountains.webp" alt="Luka Minđek outdoors with mountains behind him" width={900} height={1200} className="aspect-[3/4] w-full" priority />
+            <DetectBox left={32} top={11} width={37} height={38} />
+          </div>
           <span className="absolute -bottom-4 -left-4 flex items-center gap-2 rounded-2xl bg-surface px-4 py-3 text-sm font-semibold text-ink shadow-[var(--shadow-float)]">
             <IconTile icon="pin" tone="mint" /> {person.location.city}, {person.location.country}
           </span>

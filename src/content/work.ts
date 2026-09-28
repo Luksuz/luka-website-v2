@@ -126,9 +126,7 @@ const allProjects: Project[] = [
       "Paste a YouTube or video link and the AI watches it, marks the important moments with timestamps and keywords, and then lets you search your whole video archive in plain language.",
     role: "Built the video analysis with Gemini, semantic search on pgvector and a web app with live progress while a video is processed.",
     stack: ["Gemini", "FastAPI", "Supabase pgvector", "Next.js"],
-    icon: "eye",
-    tone: "peach",
-    panel: ["00:42  Demo starts", "03:15  Pricing question", "07:58  Customer story", "Search: \"where they talk about pricing\""],
+    image: { src: "/images/proj-video-search.webp", width: 1400, height: 875, alt: "Video search AI dashboard: a video being analysed at 64%, and a search for pricing returning timestamped moments from several videos" },
     published: true,
   },
 ];

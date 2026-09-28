@@ -97,3 +97,21 @@ export function Hl({ text, hl }: { text: string; hl?: string }) {
     </>
   );
 }
+
+/**
+ * A green face-detection box over a photo, like a vision model's output.
+ * Position in percent of the photo; the parent must be `relative`.
+ */
+export function DetectBox({ left, top, width, height, label = "Luka", confidence = "100%" }: { left: number; top: number; width: number; height: number; label?: string; confidence?: string }) {
+  return (
+    <span
+      className="pointer-events-none absolute z-20 rounded-md border-[3px] border-[#22C55E] shadow-[0_0_0_1px_rgba(0,0,0,0.25),0_0_18px_rgba(34,197,94,0.45)]"
+      style={{ left: `${left}%`, top: `${top}%`, width: `${width}%`, height: `${height}%` }}
+      aria-hidden="true"
+    >
+      <span className="absolute -left-[3px] top-full mt-1.5 flex items-center gap-1.5 whitespace-nowrap rounded-md bg-[#22C55E] px-2 py-1 font-mono text-[12px] font-bold leading-none text-[#052E16] shadow-[var(--shadow-float)]">
+        {label} <span className="font-medium opacity-80">{confidence}</span>
+      </span>
+    </span>
+  );
+}

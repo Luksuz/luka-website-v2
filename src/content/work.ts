@@ -80,7 +80,7 @@ const allProjects: Project[] = [
       "Finds rooftop solar panels across Croatia in public aerial photos, estimates each installation's size and yearly output, and links it to its official address and land parcel. A lead list for energy companies, one street or the whole country at a time.",
     role: "Built together with Ivan Židov: aerial image tiling, AI segmentation of the panels, clustering into sites, address matching and a map to review the results.",
     stack: ["Python", "Computer vision", "SAM segmentation", "GIS", "Leaflet"],
-    image: { src: "/images/proj-solar-scan.webp", width: 800, height: 720, alt: "Aerial photo of a house with solar panels on the roof, as Solar Scan sees it" },
+    image: { src: "/images/proj-solar-scan.webp", width: 1400, height: 875, alt: "Aerial photo of a neighbourhood in Prelog, Croatia, with three rooftop solar arrays boxed in yellow and their estimated power" },
     published: true,
   },
   {
@@ -116,19 +116,6 @@ const allProjects: Project[] = [
     role: "Built the platform and the AI tutor, with rules for what a tutor for kids may and may not say.",
     stack: ["React", "Supabase", "LLMs", "Gamification"],
     image: { src: "/images/proj-educro.webp", width: 1200, height: 670, alt: "Illustration of Učko, EduCRO's robot AI tutor, helping a child learn" },
-    published: true,
-  },
-  {
-    id: "ballot-counter",
-    name: "Ballot vote counter",
-    kind: "Computer vision · client project · 2026",
-    summary:
-      "Reads photographed paper ballots: pairs each front with its back by QR code, reads ticks, crosses and handwritten preferences, checks the official's signature and counts preferential votes per ballot box.",
-    role: "Built for a client: QR decoding that survives tilted photos, AI mark reading, validation rules from the electoral law and a review screen for anything unclear.",
-    stack: ["Next.js", "Vision LLMs", "QR decoding", "Postgres"],
-    icon: "check",
-    tone: "lilac",
-    panel: ["Front ↔ back by QR", "1st · 2nd · 3rd preference", "Signature check", "Count per ballot box"],
     published: true,
   },
   {

@@ -67,7 +67,7 @@ export default function CV() {
       </Section>
 
       {publishedAchievements.length > 0 && (
-        <Section id="awards" title="Awards">
+        <Section id="awards" title="Awards and events">
           <ul className="space-y-3">
             {publishedAchievements.map((a) => (
               <li key={a.event} className="rounded-2xl bg-surface p-5 shadow-[var(--shadow-float)]">

@@ -1,6 +1,8 @@
 import { person, personId, siteUrl, mindxOrgId, mindxUrl } from "@/content/site";
 import { publishedAchievements } from "@/content/achievements";
 
+const awards = publishedAchievements.filter((a) => a.award);
+
 export const websiteId = `${siteUrl}/#website`;
 
 export function personSchema() {
@@ -20,8 +22,8 @@ export function personSchema() {
     },
     worksFor: { "@type": "Organization", "@id": mindxOrgId, name: "MindX Global", url: mindxUrl },
     knowsAbout: person.knowsAbout,
-    ...(publishedAchievements.length > 0 && {
-      award: publishedAchievements.map((a) => `${a.title}, ${a.event} (${a.date.slice(0, 4)})`),
+    ...(awards.length > 0 && {
+      award: awards.map((a) => `${a.title}, ${a.event} (${a.date.slice(0, 4)})`),
     }),
     sameAs: [person.links.linkedin, person.links.github, person.links.instagram, person.links.mindxAbout],
   };

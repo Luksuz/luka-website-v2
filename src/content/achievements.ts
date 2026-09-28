@@ -6,6 +6,8 @@ export type Achievement = {
   summary: string;
   image?: { src: string; alt: string; width: number; height: number };
   source?: string;
+  /** A prize, listed as an award in structured data. "Took part" entries are not. */
+  award?: boolean;
   /** Unpublished entries are not rendered and not added to structured data. */
   published: boolean;
 };
@@ -25,6 +27,7 @@ export const achievements: Achievement[] = [
       height: 683,
     },
     source: "https://shiftmag.dev/inside-sheepai-hackathon-80-developers-vs-info-overload-7282/",
+    award: true,
     published: true,
   },
   {
@@ -41,6 +44,16 @@ export const achievements: Achievement[] = [
       height: 1400,
     },
     source: "https://abcbootcamps.com/sheepai-where-ideas-and-ai-become-reality/",
+    published: true,
+  },
+  {
+    title: "Took part",
+    event: "MEGATHON Amsterdam 2026",
+    place: "The HUBB, Amsterdam, Netherlands",
+    date: "2026-06",
+    summary:
+      "A 48-hour AI hackathon with 500 builders, investors in the room and finals on the main stage, during Amsterdam Tech Week. No prize this time, but a great weekend of building and meeting people.",
+    source: "https://megathon.xyz/",
     published: true,
   },
   {

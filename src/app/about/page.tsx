@@ -1,7 +1,6 @@
 import type { Metadata } from "next";
-import Link from "next/link";
 import Page, { Section } from "@/components/Page";
-import { Stat, Pic } from "@/components/Bits";
+import { Stat, Pic, Eyebrow, IconTile, tones } from "@/components/Bits";
 import { person } from "@/content/site";
 import { achievements, publishedAchievements, formatMonth } from "@/content/achievements";
 import { abcPhotos, funPhotos } from "@/content/photos";
@@ -36,7 +35,8 @@ export default function About() {
     <Page current="/about" schema={siteGraph([webPage("ProfilePage", title, "/about", description), breadcrumb("About", "/about")])}>
       <div className="grid items-center gap-10 md:grid-cols-[1.2fr_1fr]">
         <div>
-          <h1 className="text-4xl font-semibold text-ink sm:text-5xl">{h1}</h1>
+          <Eyebrow>About me</Eyebrow>
+          <h1 className="mt-4 text-4xl font-semibold text-ink sm:text-[56px] sm:leading-[1.05]">{h1}</h1>
           <p className="mt-5 text-lg text-muted">
             Hey, I&apos;m Luka! I&apos;m an AI engineer from {person.location.city}, {person.location.country}, and the founder of{" "}
             <a href={person.links.mindx} className={link}>MindX Global</a>. I&apos;ve been building AI and software for four
@@ -48,17 +48,22 @@ export default function About() {
             that reads them, picks out what matters and hands back clean, checked data. Nobody misses retyping.
           </p>
         </div>
-        <Pic src="/images/luka-mountains.webp" alt="Luka Minđek outdoors with mountains behind him" width={900} height={1200} className="mx-auto aspect-[4/5] w-full max-w-sm" priority />
+        <div className="relative mx-auto w-full max-w-sm">
+          <Pic src="/images/luka-mountains.webp" alt="Luka Minđek outdoors with mountains behind him" width={900} height={1200} className="aspect-[4/5] w-full rotate-2" priority />
+          <span className="absolute -bottom-4 -left-4 flex items-center gap-2 rounded-2xl bg-surface px-4 py-3 text-sm font-semibold text-ink shadow-[var(--shadow-float)]">
+            <IconTile icon="pin" tone="mint" /> {person.location.city}, {person.location.country}
+          </span>
+        </div>
       </div>
 
       <div className="mt-12 grid grid-cols-2 gap-4 sm:grid-cols-4">
-        <Stat value="4" label="years building AI" />
-        <Stat value="50+" label="projects delivered" />
-        <Stat value="30+" label="custom AI systems" />
-        <Stat value="1st" label="place at SheepAI 2025" />
+        <Stat value="4" label="years building AI" icon="clock" tone="sky" />
+        <Stat value="50+" label="projects delivered" icon="layers" tone="mint" />
+        <Stat value="30+" label="custom AI systems" icon="spark" tone="lilac" />
+        <Stat value="1st" label="place at SheepAI 2025" icon="trophy" tone="sun" />
       </div>
 
-      <Section id="what" title="What I build">
+      <Section id="what" eyebrow="What I build" title="Computers that read the boring stuff" hl="read">
         <p className="text-muted">
           The tools change every few months. Today that usually means vision-language models, OCR and classic computer
           vision, joined with plain software: a database, an API, a simple screen where a person can check the result.
@@ -67,33 +72,36 @@ export default function About() {
         <ul className="mt-6 grid gap-5 sm:grid-cols-3">
           {builds.map((b) => (
             <li key={b.src}>
-              <Pic src={b.src} alt={b.alt} width={720} height={393} className="aspect-[16/10] w-full" />
-              <p className="mt-2 text-sm text-ink">{b.caption}</p>
+              <div className="rounded-3xl bg-surface p-3 shadow-[var(--shadow-float)]">
+                <Pic src={b.src} alt={b.alt} width={720} height={393} className="aspect-[16/10] w-full shadow-none" />
+                <p className="px-2 pb-1 pt-3 font-medium text-ink">{b.caption}</p>
+              </div>
             </li>
           ))}
         </ul>
       </Section>
 
-      <Section id="how" title="How I work">
+      <Section id="how" eyebrow="How I work" title="Four habits that keep projects on track" hl="on track">
         <ol className="grid gap-4 sm:grid-cols-2">
           {steps.map(([t, d], i) => (
-            <li key={t} className="rounded-2xl bg-surface p-5 shadow-[var(--shadow-float)]">
-              <p className="flex items-center gap-3 font-semibold text-ink">
-                <span className="flex h-8 w-8 items-center justify-center rounded-full bg-accent text-sm text-white">{i + 1}</span>
+            <li key={t} className="rounded-3xl bg-surface p-6 shadow-[var(--shadow-float)]">
+              <p className="flex items-center gap-3 text-lg font-semibold text-ink">
+                <IconTile icon={(["doc", "check", "users", "rocket"] as const)[i]} tone={tones[i]} />
                 {t}
               </p>
-              <p className="mt-2 text-muted">{d}</p>
+              <p className="mt-3 text-muted">{d}</p>
             </li>
           ))}
         </ol>
       </Section>
 
       {publishedAchievements.length > 0 && (
-        <Section id="milestones" title="Milestones">
+        <Section id="milestones" eyebrow="Timeline" title="Milestones so far" hl="so far">
           <ol className="relative space-y-8 border-l-2 border-line pl-6">
             {timeline.map((a) => (
-              <li key={a.event} className="relative">
-                <span className="absolute -left-[33px] top-1.5 h-4 w-4 rounded-full border-4 border-card bg-accent" aria-hidden="true" />
+              <li key={a.event} className="relative grid gap-5 md:grid-cols-[1fr_300px] md:items-start">
+                <span className={`absolute -left-[37px] top-0.5 flex h-6 w-6 items-center justify-center rounded-full border-4 border-card text-[10px] ${a.award ? "bg-sun" : "bg-accent"}`} aria-hidden="true">{a.award ? "🏆" : ""}</span>
+                <div>
                 <p className="text-sm text-muted">
                   <time dateTime={a.date}>{formatMonth(a.date)}</time> · {a.place}
                 </p>
@@ -104,8 +112,9 @@ export default function About() {
                 {a.source && (
                   <a href={a.source} className="mt-1 inline-block text-sm text-accent hover:underline">Source</a>
                 )}
+                </div>
                 {a.image && a.image.width > a.image.height && (
-                  <Pic src={a.image.src} alt={a.image.alt} width={a.image.width} height={a.image.height} className="mt-4 aspect-[3/2] w-full max-w-lg" />
+                  <Pic src={a.image.src} alt={a.image.alt} width={a.image.width} height={a.image.height} className="aspect-[3/2] w-full max-w-lg" />
                 )}
               </li>
             ))}
@@ -113,7 +122,7 @@ export default function About() {
         </Section>
       )}
 
-      <Section id="mindx" title="MindX Global">
+      <Section id="mindx" eyebrow="My company" title="MindX Global">
         <div className="grid items-center gap-6 sm:grid-cols-[1fr_1.2fr]">
           <a href={person.links.mindx} className="block">
             <Pic src="/images/mindx-global.webp" alt="The MindX Global homepage" width={720} height={450} className="aspect-[16/10] w-full" />
@@ -126,7 +135,7 @@ export default function About() {
         </div>
       </Section>
 
-      <Section id="silicon-valley" title="Two weeks in Silicon Valley">
+      <Section id="silicon-valley" eyebrow="July 2026" title="Two weeks in Silicon Valley" hl="Silicon Valley">
         <p className="text-muted">
           Winning SheepAI came with a pretty great prize: a place on{" "}
           <a href="https://abcbootcamps.com/programs/abc-silicon-valley/" className={link}>ABC BootCamps Silicon Valley</a>{" "}
@@ -146,7 +155,7 @@ export default function About() {
         </ul>
       </Section>
 
-      <Section id="outside" title="Outside work">
+      <Section id="outside" eyebrow="Off the clock" title="Outside work" hl="Outside">
         <p className="text-muted">
           When I&apos;m not building things, I&apos;m working out, hiking, playing (amateur, very amateur) chess or on a road
           trip. Here are a few shots, in case you want to see the person behind the code. More on{" "}
@@ -164,10 +173,6 @@ export default function About() {
         </ul>
       </Section>
 
-      <p className="mt-14 text-muted">
-        More: <Link href="/work" className={link}>my work</Link> · <Link href="/cv" className={link}>CV</Link> ·{" "}
-        <a href={`mailto:${person.email}`} className={link}>email</a>
-      </p>
     </Page>
   );
 }

@@ -2,6 +2,7 @@ export const siteUrl = "https://lukamindek.com";
 export const personId = `${siteUrl}/#person`;
 export const mindxUrl = "https://mindx.global";
 export const mindxOrgId = `${mindxUrl}/#organization`;
+export const calendly = "https://calendly.com/lukamindjek/ai-informational-meeting";
 
 export const person = {
   name: "Luka Minđek",

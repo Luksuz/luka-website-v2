@@ -12,6 +12,19 @@
   --color-accent: #2F80ED;
   --color-accent-dark: #1F63C2;
   --color-teal: #2F80ED;
+  --color-accent-soft: #E1ECFD;
+
+  /* Soft tints for icon tiles and cards, so sections don't all look the same. */
+  --color-sky: #DCEBFF;
+  --color-sky-ink: #1F63C2;
+  --color-mint: #D8F3E8;
+  --color-mint-ink: #177A55;
+  --color-peach: #FFE4D6;
+  --color-peach-ink: #B8532A;
+  --color-lilac: #E8E2FF;
+  --color-lilac-ink: #5B45C4;
+  --color-sun: #FFF1C9;
+  --color-sun-ink: #8A6300;
 
   --font-sans: var(--font-jost), ui-sans-serif, system-ui, sans-serif;
   --font-display: var(--font-jost), ui-sans-serif, system-ui, sans-serif;
@@ -77,4 +90,25 @@ a {
   border-radius: 9999px;
   background: rgba(255, 255, 255, 0.85);
   filter: blur(0.5px);
+}
+
+/* Dark call-to-action band with a soft blue glow. */
+.cta-band {
+  background:
+    radial-gradient(60% 90% at 90% 0%, rgba(47, 128, 237, 0.55) 0%, rgba(47, 128, 237, 0) 60%),
+    radial-gradient(50% 80% at 0% 100%, rgba(91, 69, 196, 0.35) 0%, rgba(91, 69, 196, 0) 60%),
+    var(--color-ink);
+}
+
+/* Light blue wash for highlight cards. */
+.wash {
+  background:
+    radial-gradient(70% 90% at 100% 0%, rgba(47, 128, 237, 0.16) 0%, rgba(47, 128, 237, 0) 60%),
+    var(--color-surface);
+}
+
+/* Faint dot grid behind section blocks. */
+.dot-grid {
+  background-image: radial-gradient(rgba(30, 37, 48, 0.09) 1px, transparent 1px);
+  background-size: 18px 18px;
 }

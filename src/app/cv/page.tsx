@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import Page, { Section } from "@/components/Page";
-import { Chip } from "@/components/Bits";
+import { Chip, Eyebrow, IconTile, tones } from "@/components/Bits";
 import { person } from "@/content/site";
 import { roles, skills, credentials } from "@/content/cv";
 import { publishedAchievements, formatMonth } from "@/content/achievements";
@@ -26,7 +26,8 @@ export default function CV() {
           className="h-36 w-36 shrink-0 rounded-full bg-surface object-cover object-top shadow-[var(--shadow-float)]"
         />
         <div>
-          <h1 className="text-4xl font-semibold text-ink">{person.name} — CV</h1>
+          <Eyebrow>Curriculum vitae</Eyebrow>
+          <h1 className="mt-3 text-4xl font-semibold text-ink sm:text-5xl">{person.name} — CV</h1>
           <p className="mt-2 text-lg text-muted">{person.shortTitle} · {person.location.city}, {person.location.country}</p>
           <p className="mt-4 flex flex-wrap justify-center gap-3 sm:justify-start">
             <a href={`mailto:${person.email}`} className="rounded-xl bg-accent px-4 py-2 text-sm font-semibold text-white shadow-[var(--shadow-accent)] hover:bg-accent-dark">{person.email}</a>
@@ -36,7 +37,7 @@ export default function CV() {
         </div>
       </div>
 
-      <Section id="experience" title="Experience">
+      <Section id="experience" eyebrow="Experience" title="Where I’ve been building" hl="building">
         <ol className="relative space-y-8 border-l-2 border-line pl-6">
           {roles.map((r) => (
             <li key={r.title} className="relative">
@@ -53,13 +54,16 @@ export default function CV() {
         </ol>
       </Section>
 
-      <Section id="skills" title="Skills">
+      <Section id="skills" eyebrow="Skills" title="What I work with" hl="work with">
         <div className="grid gap-6 sm:grid-cols-2">
-          {skills.map((s) => (
-            <div key={s.group} className="rounded-2xl bg-surface p-5 shadow-[var(--shadow-float)]">
-              <h3 className="font-semibold text-ink">{s.group}</h3>
-              <p className="mt-3 flex flex-wrap gap-2">
-                {s.items.map((i) => <Chip key={i}>{i}</Chip>)}
+          {skills.map((s, n) => (
+            <div key={s.group} className="rounded-3xl bg-surface p-6 shadow-[var(--shadow-float)]">
+              <h3 className="flex items-center gap-3 text-lg font-semibold text-ink">
+                <IconTile icon={(["spark", "doc", "code", "layers", "plug", "eye"] as const)[n % 6]} tone={tones[n % tones.length]} />
+                {s.group}
+              </h3>
+              <p className="mt-4 flex flex-wrap gap-2">
+                {s.items.map((i) => <Chip key={i} tone={tones[n % tones.length]}>{i}</Chip>)}
               </p>
             </div>
           ))}
@@ -67,12 +71,15 @@ export default function CV() {
       </Section>
 
       {publishedAchievements.length > 0 && (
-        <Section id="awards" title="Awards and events">
+        <Section id="awards" eyebrow="Awards and events" title="Hackathons, bootcamps and a diploma" hl="Hackathons">
           <ul className="space-y-3">
             {publishedAchievements.map((a) => (
-              <li key={a.event} className="rounded-2xl bg-surface p-5 shadow-[var(--shadow-float)]">
+              <li key={a.event} className="flex items-center gap-4 rounded-3xl bg-surface p-5 shadow-[var(--shadow-float)]">
+                <IconTile icon={a.award ? "trophy" : "rocket"} tone={a.award ? "sun" : "sky"} />
+                <div>
                 <p className="font-semibold text-ink">{a.title} — {a.event}</p>
                 <p className="text-sm text-muted">{a.place}, <time dateTime={a.date}>{formatMonth(a.date)}</time>{a.source && <> · <a href={a.source} className="text-accent hover:underline">source</a></>}</p>
+                </div>
               </li>
             ))}
           </ul>
@@ -80,12 +87,15 @@ export default function CV() {
       )}
 
       {published.length > 0 && (
-        <Section id="education" title="Education and certifications">
+        <Section id="education" eyebrow="Education" title="Education and certifications" hl="Education">
           <ul className="space-y-3">
             {published.map((c) => (
-              <li key={c.name} className="rounded-2xl bg-surface p-5 shadow-[var(--shadow-float)]">
-                <p className="font-semibold text-ink">{c.issuer}</p>
-                <p className="text-muted">{c.name}{c.year ? `, ${c.year}` : ""}</p>
+              <li key={c.name} className="flex items-center gap-4 rounded-3xl bg-surface p-5 shadow-[var(--shadow-float)]">
+                <IconTile icon="cap" tone="lilac" />
+                <div>
+                  <p className="font-semibold text-ink">{c.issuer}</p>
+                  <p className="text-muted">{c.name}{c.year ? `, ${c.year}` : ""}</p>
+                </div>
               </li>
             ))}
           </ul>

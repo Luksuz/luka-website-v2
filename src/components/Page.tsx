@@ -1,17 +1,25 @@
 import Header from "./Header";
 import Footer from "./Footer";
 import JsonLd from "./JsonLd";
+import CtaBand from "./CtaBand";
+import { Eyebrow, Hl } from "./Bits";
 
 export default function Page({
   current,
   schema,
   hero,
+  bare = false,
+  cta = true,
   children,
 }: {
   current: string;
   schema: object;
   /** Home page: a full-width hero card that holds the header. */
   hero?: React.ReactNode;
+  /** Sections bring their own cards instead of sitting in one big card. */
+  bare?: boolean;
+  /** The dark "let's talk" band above the footer. */
+  cta?: boolean;
   children: React.ReactNode;
 }) {
   return (
@@ -29,20 +37,83 @@ export default function Page({
       ) : (
         <Header current={current} />
       )}
-      <main id="main" className="mx-auto max-w-5xl px-4 pt-12 sm:px-6 sm:pt-16">
-        <div className="rounded-[28px] bg-card px-5 py-10 shadow-[var(--shadow-soft)] sm:px-12 sm:py-14">{children}</div>
-      </main>
+      {bare ? (
+        <main id="main" className="mx-auto max-w-[1320px] space-y-6 px-3 pt-6 sm:space-y-8 sm:px-6 sm:pt-8">
+          {children}
+        </main>
+      ) : (
+        <main id="main" className="mx-auto max-w-5xl px-4 pt-12 sm:px-6 sm:pt-16">
+          <div className="rounded-[28px] bg-card px-5 py-10 shadow-[var(--shadow-soft)] sm:px-12 sm:py-14">{children}</div>
+        </main>
+      )}
+      {cta && <CtaBand wide={bare} />}
       <Footer />
       <JsonLd data={schema} />
     </>
   );
 }
 
-export function Section({ id, title, children }: { id: string; title: string; children: React.ReactNode }) {
+export function Section({
+  id,
+  title,
+  eyebrow,
+  hl,
+  intro,
+  children,
+}: {
+  id: string;
+  title: string;
+  eyebrow?: string;
+  /** Part of the title shown in the accent colour. */
+  hl?: string;
+  intro?: React.ReactNode;
+  children: React.ReactNode;
+}) {
   return (
-    <section aria-labelledby={id} className="mt-14 first:mt-0">
-      <h2 id={id} className="text-xl font-semibold text-ink sm:text-2xl">{title}</h2>
-      <div className="mt-4">{children}</div>
+    <section aria-labelledby={id} className="mt-16 first:mt-0 sm:mt-20">
+      {eyebrow && <Eyebrow>{eyebrow}</Eyebrow>}
+      <h2 id={id} className={`text-3xl font-semibold text-ink sm:text-[40px] ${eyebrow ? "mt-3" : ""}`}>
+        <Hl text={title} hl={hl} />
+      </h2>
+      {intro && <p className="mt-3 max-w-2xl text-lg text-muted">{intro}</p>}
+      <div className="mt-7">{children}</div>
+    </section>
+  );
+}
+
+/** A section on a bare page: its own rounded card. */
+export function Block({
+  id,
+  title,
+  eyebrow,
+  hl,
+  intro,
+  className = "bg-card",
+  action,
+  children,
+}: {
+  id: string;
+  title: string;
+  eyebrow?: string;
+  hl?: string;
+  intro?: React.ReactNode;
+  className?: string;
+  action?: React.ReactNode;
+  children: React.ReactNode;
+}) {
+  return (
+    <section aria-labelledby={id} className={`rounded-[28px] px-5 py-10 shadow-[var(--shadow-soft)] sm:rounded-[40px] sm:px-12 sm:py-14 ${className}`}>
+      <div className="flex flex-wrap items-end justify-between gap-4">
+        <div>
+          {eyebrow && <Eyebrow>{eyebrow}</Eyebrow>}
+          <h2 id={id} className="mt-3 text-3xl font-semibold text-ink sm:text-[44px]">
+            <Hl text={title} hl={hl} />
+          </h2>
+          {intro && <p className="mt-3 max-w-2xl text-lg text-muted">{intro}</p>}
+        </div>
+        {action}
+      </div>
+      <div className="mt-8 sm:mt-10">{children}</div>
     </section>
   );
 }

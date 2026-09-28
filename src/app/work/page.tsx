@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import Page, { Section } from "@/components/Page";
-import { Pic } from "@/components/Bits";
+import { Pic, Eyebrow, Chip } from "@/components/Bits";
 import { person } from "@/content/site";
 import { projects, mindxWork } from "@/content/work";
 import { pageMeta } from "@/lib/meta";
@@ -16,7 +16,8 @@ export const metadata: Metadata = pageMeta({ title, description, path: "/work" }
 export default function Work() {
   return (
     <Page current="/work" schema={siteGraph([webPage("CollectionPage", title, "/work", description), breadcrumb("Work", "/work")])}>
-      <h1 className="text-4xl font-semibold text-ink sm:text-5xl">{h1}</h1>
+      <Eyebrow>Portfolio</Eyebrow>
+      <h1 className="mt-4 text-4xl font-semibold text-ink sm:text-[56px] sm:leading-[1.05]">{h1}</h1>
       <p className="mt-5 max-w-2xl text-lg text-muted">
         Things I&apos;ve built for fun and in competitions, plus the client work I do at MindX. More personal projects are on the way.
       </p>
@@ -32,7 +33,7 @@ export default function Work() {
               </div>
             )}
             <div className="px-2 pb-2 pt-5">
-              <p className="text-sm font-medium text-accent">{p.kind}</p>
+              <Chip tone="sun">🏆 {p.kind}</Chip>
               <h2 id={slug(p.name)} className="mt-1 text-2xl font-semibold text-ink">{p.name}</h2>
               <p className="mt-3 text-muted">{p.summary}</p>
               <p className="mt-3 text-muted"><span className="font-medium text-ink">My part:</span> {p.role}</p>
@@ -42,7 +43,7 @@ export default function Work() {
         ))}
       </div>
 
-      <Section id="client-work" title="Client work at MindX Global">
+      <Section id="client-work" eyebrow="For clients" title="Client work at MindX Global" hl="MindX Global">
         <p className="text-muted">
           What I build for companies, with the results, is written up on{" "}
           <a href={`${person.links.mindx}/blog`} className="text-ink underline hover:text-accent">mindx.global</a>.
@@ -51,8 +52,10 @@ export default function Work() {
           {mindxWork.map((w) => (
             <li key={w.href}>
               <a href={w.href} className="group block">
-                <Pic src={w.img} alt={w.name} width={720} height={393} className="aspect-[16/10] w-full transition-transform group-hover:-translate-y-1" />
-                <p className="mt-2 text-sm text-ink group-hover:text-accent">{w.name} →</p>
+                <span className="block rounded-3xl bg-surface p-2.5 shadow-[var(--shadow-float)] transition-transform group-hover:-translate-y-1">
+                  <Pic src={w.img} alt={w.name} width={720} height={393} className="aspect-[16/10] w-full shadow-none" />
+                  <span className="block px-1.5 pb-1 pt-3 text-sm font-medium text-ink group-hover:text-accent">{w.name} →</span>
+                </span>
               </a>
             </li>
           ))}

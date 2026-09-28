@@ -1,4 +1,6 @@
 import { mindxUrl } from "./site";
+import type { IconName } from "@/components/Icon";
+import type { Tone } from "@/components/Bits";
 
 /**
  * What I can build for you. Headings use the words people actually search for
@@ -7,6 +9,8 @@ import { mindxUrl } from "./site";
  */
 export type Service = {
   id: string;
+  icon: IconName;
+  tone: Tone;
   title: string;
   short: string;
   problem: string;
@@ -20,6 +24,8 @@ export type Service = {
 export const services: Service[] = [
   {
     id: "document-processing",
+    icon: "doc",
+    tone: "sky",
     title: "Intelligent document processing",
     short: "PDFs, invoices and orders turned into clean data, no retyping.",
     problem: "Someone on your team copies numbers from PDFs, invoices or order emails into another system. Every day.",
@@ -32,6 +38,8 @@ export const services: Service[] = [
   },
   {
     id: "ocr-handwriting",
+    icon: "scan",
+    tone: "mint",
     title: "OCR for scans and handwriting",
     short: "Scanned forms and handwritten notes, read properly.",
     problem: "You have boxes (or folders) of scanned forms and handwritten pages that nobody can search.",
@@ -44,6 +52,8 @@ export const services: Service[] = [
   },
   {
     id: "ai-agents",
+    icon: "agent",
+    tone: "lilac",
     title: "AI agents and workflow automation",
     short: "AI that doesn't just answer, it does the next step too.",
     problem: "A process has many small steps: read the request, check it against the rules, look something up, route it, reply.",
@@ -56,6 +66,8 @@ export const services: Service[] = [
   },
   {
     id: "rag-assistant",
+    icon: "chat",
+    tone: "peach",
     title: "AI assistant for your company documents (RAG)",
     short: "Ask your manuals, policies and reports a question, get an answer with sources.",
     problem: "The answer exists somewhere in your documents, but finding it takes half an hour and three colleagues.",
@@ -68,6 +80,8 @@ export const services: Service[] = [
   },
   {
     id: "computer-vision",
+    icon: "eye",
+    tone: "sun",
     title: "Computer vision and image analysis",
     short: "Photos, labels and drawings checked by AI.",
     problem: "People spend hours looking at photos, product labels or technical drawings to check the same things.",
@@ -80,6 +94,8 @@ export const services: Service[] = [
   },
   {
     id: "llm-integration",
+    icon: "plug",
+    tone: "sky",
     title: "LLM integration into your software",
     short: "GPT, Claude or Gemini features inside the app you already have.",
     problem: "You'd like AI inside your product or internal tool, but don't want a science project.",

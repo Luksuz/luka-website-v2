@@ -97,7 +97,7 @@ export function DetectBox({ left, top, width, height, label = "Luka", confidence
       aria-hidden="true"
     >
       <span className="absolute -left-[3px] top-full mt-1.5 flex items-center gap-1.5 whitespace-nowrap rounded-md bg-[#22C55E] px-2 py-1 font-mono text-[12px] font-bold leading-none text-[#052E16] shadow-[var(--shadow-float)]">
-        {label} <span className="font-medium opacity-80">{confidence}</span>
+        {label} <span className="font-medium">{confidence}</span>
       </span>
     </span>
   );

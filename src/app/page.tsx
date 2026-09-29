@@ -87,7 +87,7 @@ export default function Home() {
               >
                 <div className="flex items-start justify-between">
                   <IconTile icon={s.icon} tone={s.tone} size="lg" />
-                  <span className="text-sm font-semibold text-line">0{i + 1}</span>
+                  <span className="text-sm font-semibold text-muted" aria-hidden="true">0{i + 1}</span>
                 </div>
                 <h3 className="mt-5 text-xl font-semibold text-ink group-hover:text-accent">{s.title}</h3>
                 <p className="mt-2 text-muted">{s.short}</p>

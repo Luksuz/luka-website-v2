@@ -19,7 +19,7 @@ export default function CV() {
     <Page current="/cv" schema={siteGraph([webPage("WebPage", title, "/cv", description), breadcrumb("CV", "/cv")])}>
       <div className="flex flex-col items-center gap-6 text-center sm:flex-row sm:text-left">
         <img
-          src="/images/luka-cutout.webp"
+          src="/images/luka-cutout-560.webp"
           alt="Luka Minđek"
           width={1137}
           height={1400}

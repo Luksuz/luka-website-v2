@@ -126,11 +126,14 @@ export default function Hero() {
           />
           <span className="relative z-10 block h-full">
             <img
-              src="/images/luka-cutout.webp"
+              src="/images/luka-cutout-820.webp"
+              srcSet="/images/luka-cutout-560.webp 560w, /images/luka-cutout-820.webp 820w"
+              sizes="(min-width: 1024px) 490px, 360px"
               alt="Luka Minđek"
-              width={1137}
-              height={1400}
+              width={820}
+              height={1010}
               fetchPriority="high"
+              decoding="async"
               className="h-full w-auto max-w-none object-contain object-bottom drop-shadow-[0_30px_40px_rgba(30,37,48,0.18)]"
             />
             <FaceMesh />

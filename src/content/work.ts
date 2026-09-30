@@ -19,6 +19,8 @@ export type Project = {
   /** Short labels floated on the plain panel of a project with no picture. */
   panel?: string[];
   award?: boolean;
+  /** Extra screenshots shown as a thumbnail row under the card. */
+  gallery?: { src: string; width: number; height: number; alt: string }[];
   /** Unpublished entries are not rendered anywhere. */
   published: boolean;
 };
@@ -81,6 +83,7 @@ const allProjects: Project[] = [
     role: "Built together with Ivan Židov: aerial image tiling, AI segmentation of the panels, clustering into sites, address matching and a map to review the results.",
     stack: ["Python", "Computer vision", "SAM segmentation", "GIS", "Leaflet"],
     image: { src: "/images/proj-solar-scan.webp", width: 1400, height: 875, alt: "Aerial photo of a neighbourhood in Prelog, Croatia, with three rooftop solar arrays boxed in yellow and their estimated power" },
+    gallery: [{ src: "/images/shot-solar-detail.webp", width: 1400, height: 1300, alt: "Close-up of a detected rooftop solar array with its outline and estimated size" }],
     published: true,
   },
   {
@@ -104,7 +107,29 @@ const allProjects: Project[] = [
       "An AI social media manager. Connect Facebook, Instagram, LinkedIn and X, and it learns from what worked for you before, writes new posts in your voice and can schedule and publish them.",
     role: "Built end to end: social logins, post sync, AI analysis and writing, a publishing queue with safety limits, and Stripe subscriptions.",
     stack: ["Next.js", "Supabase", "Stripe", "LLMs", "Meta API"],
-    image: { src: "/images/proj-postpilot.webp", width: 1200, height: 994, alt: "Design of the PostPilot dashboard with connected accounts and engagement stats" },
+    image: { src: "/images/proj-postpilot-v2.webp", width: 1400, height: 875, alt: "PostPilot home page: Never run out of on-brand posts again" },
+    gallery: [
+      { src: "/images/shot-postpilot-problem.webp", width: 1400, height: 875, alt: "PostPilot page section on the problems it solves: blank-page paralysis, posting going quiet, guessing what works" },
+      { src: "/images/shot-postpilot-steps.webp", width: 1400, height: 875, alt: "PostPilot's three steps: sync, analyze, generate" },
+      { src: "/images/shot-postpilot-pricing.webp", width: 1400, height: 875, alt: "PostPilot pricing: one plan at 29 dollars a month" },
+    ],
+    published: true,
+  },
+  {
+    id: "lens-order-ai",
+    name: "Lens Order AI",
+    kind: "Document AI SaaS · 2026",
+    summary:
+      "Opticians and lens labs send it a photo, scan or PDF of a lens order, handwritten or printed, and it hands back a clean, editable order: sphere, cylinder, axis, add, PD and lens details, each with a confidence score.",
+    role: "Built end to end at MindX Global: vision-model extraction against a custom field schema, a review screen that flags unclear fields, exports and an API.",
+    stack: ["Next.js", "Gemini", "Postgres", "OCR"],
+    url: "https://lensorderai.com",
+    image: { src: "/images/proj-lens-order-ai.webp", width: 1400, height: 875, alt: "Lens Order AI home page with a handwritten lens order photo sliding into the extracted order" },
+    gallery: [
+      { src: "/images/shot-lens-review.webp", width: 1400, height: 981, alt: "Lens Order AI review screen: a handwritten order photo next to the extracted fields with confidence scores" },
+      { src: "/images/shot-lens-messy.webp", width: 1400, height: 981, alt: "A messy WhatsApp photo of an order, read by Lens Order AI with unclear fields flagged" },
+      { src: "/images/shot-lens-orders.webp", width: 1400, height: 875, alt: "Lens Order AI orders list" },
+    ],
     published: true,
   },
   {
@@ -127,6 +152,10 @@ const allProjects: Project[] = [
     role: "Built the video analysis with Gemini, semantic search on pgvector and a web app with live progress while a video is processed.",
     stack: ["Gemini", "FastAPI", "Supabase pgvector", "Next.js"],
     image: { src: "/images/proj-video-search.webp", width: 1400, height: 875, alt: "Video search AI dashboard: a video being analysed at 64%, and a search for pricing returning timestamped moments from several videos" },
+    gallery: [
+      { src: "/images/shot-video-results.webp", width: 1400, height: 553, alt: "Video search results: timestamped moments across several videos, ranked by relevance" },
+      { src: "/images/shot-video-library.webp", width: 1400, height: 926, alt: "Video library with a summary, keywords and category for every analysed video" },
+    ],
     published: true,
   },
 ];

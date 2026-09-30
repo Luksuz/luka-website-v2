@@ -10,7 +10,7 @@ import { siteGraph, webPage, breadcrumb } from "@/lib/schema";
 const title = "Luka Minđek — work and projects";
 const h1 = "Work and projects";
 const description =
-  "Apps and AI projects by Luka Minđek: Sofi and Compound mobile apps, Solar Scan, Nota, PostPilot, the SheepAI-winning Cyber Shepherd and client work at MindX Global.";
+  "Apps and AI projects by Luka Minđek: Sofi, Compound, Solar Scan, PostPilot, Lens Order AI, the SheepAI-winning Cyber Shepherd and MindX client work.";
 
 export const metadata: Metadata = pageMeta({ title, description, path: "/work" });
 
@@ -144,6 +144,17 @@ function ProjectCard({ p, wide = false }: { p: Project; wide?: boolean }) {
         <div className="mt-auto">
           <Stack items={p.stack} />
         </div>
+        {p.gallery && (
+          <ul className="mt-5 grid grid-cols-3 gap-2" aria-label={`More ${p.name} screenshots`}>
+            {p.gallery.map((g) => (
+              <li key={g.src}>
+                <a href={g.src} className="block overflow-hidden rounded-xl ring-1 ring-black/5 transition-transform hover:-translate-y-0.5">
+                  <img src={g.src} alt={g.alt} width={g.width} height={g.height} loading="lazy" decoding="async" className="aspect-[16/10] w-full object-cover object-top" />
+                </a>
+              </li>
+            ))}
+          </ul>
+        )}
         {p.url && <p className="mt-3"><a href={p.url} className="text-accent underline">Open {p.name}</a></p>}
       </div>
     </article>

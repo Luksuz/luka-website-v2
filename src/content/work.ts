@@ -140,7 +140,12 @@ const allProjects: Project[] = [
       "Learning that works like a game, for Croatian students: points, badges, streaks and leaderboards, plus Učko, an AI tutor that explains a wrong answer right when it happens. Teachers get a panel with questions and class results.",
     role: "Built the platform and the AI tutor, with rules for what a tutor for kids may and may not say.",
     stack: ["React", "Supabase", "LLMs", "Gamification"],
-    image: { src: "/images/proj-educro.webp", width: 1200, height: 670, alt: "Illustration of Učko, EduCRO's robot AI tutor, helping a child learn" },
+    image: { src: "/images/proj-educro-v2.webp", width: 1400, height: 875, alt: "EduCRO student dashboard: points, accuracy, a 12-day streak, subject cards and today's challenge" },
+    gallery: [
+      { src: "/images/shot-educro-leaderboard.webp", width: 1400, height: 875, alt: "EduCRO leaderboard with a podium for the top three students" },
+      { src: "/images/shot-educro-teacher.webp", width: 1400, height: 875, alt: "EduCRO teacher panel with student numbers and a weekly learning activity chart" },
+      { src: "/images/shot-educro-gamification.webp", width: 1400, height: 875, alt: "EduCRO page section on gamification: a class ranking and progress to the next badge" },
+    ],
     published: true,
   },
   {
